@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at BscScan.com on 2021-07-20
-*/
-
 // SPDX-License-Identifier: LGPL-3.0-only
 pragma solidity >=0.7.0 <0.9.0;
 
@@ -48,7 +44,7 @@ contract Proxy {
 }
 
 interface ITreasure {
-    function initialize(address _MILKY, address _MILKYLP, address __owner, address _depositToken, address _depositor, address _rewardManager) external;
+    function initialize(address withdrawAsset, address depositAsset, address _owner, address _depositToken, address _depositor, address _rewardManager) external;
 }
 
 interface IStaking {
@@ -167,105 +163,61 @@ interface IBEP20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-contract Ownable {
-    address private _owner;
+interface IOwnable {
+    function owner() external view returns (address);
 
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    function renounceOwner() external;
 
-    /**
-     * @dev Initializes the contract setting the deployer as the initial owner.
-     */
-    constructor() {
-        _owner = msg.sender;
-        emit OwnershipTransferred(address(0), _owner);
+    function pushOwner(address newOwner_) external;
+
+    function pullOwner() external;
+}
+
+contract Ownable is IOwnable {
+
+    address internal _owner;
+    address internal _newOwner;
+
+    event OwnershipPushed(address indexed previousOwner, address indexed newOwner);
+    event OwnershipPulled(address indexed previousOwner, address indexed newOwner);
+
+    function initializeOwnable(address __owner) internal {
+        _owner = __owner;
+        emit OwnershipPushed(address(0), __owner);
     }
 
-    /**
-     * @dev Returns the address of the current owner.
-     */
-    function owner() public view returns (address) {
+    function owner() public override view returns (address) {
         return _owner;
     }
 
-    /**
-     * @dev Throws if called by any account other than the owner.
-     */
     modifier onlyOwner() {
-        require(isOwner(), "Ownable: caller is not the owner");
+        require(_owner == msg.sender, "Ownable: caller is not the owner");
         _;
     }
 
-    /**
-     * @dev Returns true if the caller is the current owner.
-     */
-    function isOwner() public view returns (bool) {
-        return msg.sender == _owner;
-    }
-
-    /**
-     * @dev Leaves the contract without owner. It will not be possible to call
-     * `onlyOwner` functions anymore. Can only be called by the current owner.
-     *
-     * NOTE: Renouncing ownership will leave the contract without an owner,
-     * thereby removing any functionality that is only available to the owner.
-     */
-    function renounceOwnership() external onlyOwner {
-        emit OwnershipTransferred(_owner, address(0));
+    function renounceOwner() public virtual override onlyOwner() {
+        emit OwnershipPushed(_owner, address(0));
         _owner = address(0);
     }
 
-    /**
-     * @dev Transfers ownership of the contract to a new account (`newOwner`).
-     * Can only be called by the current owner.
-     */
-    function transferOwnership(address newOwner) external onlyOwner {
-        _transferOwnership(newOwner);
+    function pushOwner(address newOwner_) public virtual override onlyOwner() {
+        require(newOwner_ != address(0), "Ownable: new owner is the zero address");
+        emit OwnershipPushed(_owner, newOwner_);
+        _newOwner = newOwner_;
     }
 
-    /**
-     * @dev Transfers ownership of the contract to a new account (`newOwner`).
-     */
-    function _transferOwnership(address newOwner) internal {
-        require(newOwner != address(0), "Ownable: new owner is the zero address");
-        emit OwnershipTransferred(_owner, newOwner);
-        _owner = newOwner;
+    function pullOwner() public virtual override {
+        require(msg.sender == _newOwner, "Ownable: must be new owner to pull");
+        emit OwnershipPulled(_owner, _newOwner);
+        _owner = _newOwner;
     }
 }
 
 contract BondingFactory is Ownable {
-    address public bondingBEP20Implement;
-    address public bondingNativeImplement;
-    address public stakingImplement;
-    address public sTokenImplement;
-    address public treasuryImplement;
-
-    enum SetContractType{BEP20_BONDING, NATIVE_BONDING, STAKING, STOKEN, TREASURY}
-
-    enum BondingType{BEP20, NATIVE}
-
-    constructor(address _bondingBEP20Implement, address _bondingNativeImplement, address _stakingImplement, address _sTokenImplement, address _treasuryImplement) public {
-        bondingBEP20Implement = _bondingBEP20Implement;
-        bondingNativeImplement = _bondingNativeImplement;
-        stakingImplement = _stakingImplement;
-        sTokenImplement = _sTokenImplement;
-        treasuryImplement = _treasuryImplement;
-    }
-
-    function setAddress(SetContractType _type, address _address) external onlyOwner {
-        if (_type == SetContractType.BEP20_BONDING) {
-            bondingBEP20Implement = _address;
-        } else if (_type == SetContractType.NATIVE_BONDING) {
-            bondingNativeImplement = _address;
-        } else if (_type == SetContractType.STAKING) {
-            stakingImplement = _address;
-        } else if (_type == SetContractType.STOKEN) {
-            sTokenImplement = _address;
-        } else if (_type == SetContractType.TREASURY) {
-            treasuryImplement = _address;
-        }
-    }
-
     struct ListAddress {
+        address owner;
+        address depositAsset;
+        address withdrawAsset;
         address staking;
         address bonding;
         address sToken;
@@ -298,7 +250,38 @@ contract BondingFactory is Ownable {
         BondingType _bondingType;
     }
 
-    event BondCreated(address staking, address sToken, address bonding, address treasury);
+    event BondCreated(address indexed sender, address indexed depositAddress, address indexed withdrawAddress, address staking, address sToken, address bonding, address treasury);
+    enum SetContractType{BEP20_BONDING, NATIVE_BONDING, STAKING, STOKEN, TREASURY}
+    enum BondingType{BEP20, NATIVE}
+
+    address public bondingBEP20Implement;
+    address public bondingNativeImplement;
+    address public stakingImplement;
+    address public sTokenImplement;
+    address public treasuryImplement;
+    ListAddress[] public listBonding;
+
+    constructor(address _bondingBEP20Implement, address _bondingNativeImplement, address _stakingImplement, address _sTokenImplement, address _treasuryImplement) public {
+        bondingBEP20Implement = _bondingBEP20Implement;
+        bondingNativeImplement = _bondingNativeImplement;
+        stakingImplement = _stakingImplement;
+        sTokenImplement = _sTokenImplement;
+        treasuryImplement = _treasuryImplement;
+    }
+
+    function setAddress(SetContractType _type, address _address) external onlyOwner {
+        if (_type == SetContractType.BEP20_BONDING) {
+            bondingBEP20Implement = _address;
+        } else if (_type == SetContractType.NATIVE_BONDING) {
+            bondingNativeImplement = _address;
+        } else if (_type == SetContractType.STAKING) {
+            stakingImplement = _address;
+        } else if (_type == SetContractType.STOKEN) {
+            sTokenImplement = _address;
+        } else if (_type == SetContractType.TREASURY) {
+            treasuryImplement = _address;
+        }
+    }
 
     function createBonding(BondCreatingData memory data) public returns (address, address, address, address) {
         address treasury = address(new Proxy(treasuryImplement));
@@ -311,25 +294,48 @@ contract BondingFactory is Ownable {
             bonding = address(new Proxy(bondingNativeImplement));
         }
 
-        ListAddress  memory listContract = ListAddress(staking, bonding, sToken, treasury);
-
+        ListAddress  memory listContract = ListAddress(
+            data.owner,
+            data.depositAsset,
+            data.withdrawAsset,
+            staking,
+            bonding,
+            sToken,
+            treasury
+        );
 
         initializeStaking(data, listContract);
         initializeSToken(data, listContract);
         initializeBonding(data, listContract);
         initializeTreasury(data, listContract);
-        emit BondCreated(staking, sToken, bonding, treasury);
+        emit BondCreated(data.owner, data.depositAsset, data.withdrawAsset, staking, sToken, bonding, treasury);
+        listBonding.push(listContract);
         return (staking, sToken, bonding, treasury);
 
     }
 
     function initializeStaking(BondCreatingData memory data, ListAddress memory listContract) private {
         // force rebase each 8 hours
-        IStaking(listContract.staking).initialize(data.withdrawAsset, listContract.sToken, 9600, 0, block.number, data.rate, listContract.treasury, data.owner);
+        IStaking(listContract.staking).initialize(
+            data.withdrawAsset,
+            listContract.sToken,
+            9600,
+            0,
+            block.number,
+            data.rate,
+            listContract.treasury,
+            data.owner
+        );
     }
 
     function initializeSToken(BondCreatingData memory data, ListAddress memory listContract) private {
-        ISToken(listContract.sToken).initialize(listContract.staking, data.owner, IBEP20(data.withdrawAsset).name(), IBEP20(data.withdrawAsset).decimals(), data.totalSup);
+        ISToken(listContract.sToken).initialize(
+            listContract.staking,
+            data.owner,
+            IBEP20(data.withdrawAsset).name(),
+            IBEP20(data.withdrawAsset).decimals(),
+            data.totalSup
+        );
     }
 
     function initializeBonding(BondCreatingData memory data, ListAddress memory listContract) private {
@@ -349,6 +355,13 @@ contract BondingFactory is Ownable {
     }
 
     function initializeTreasury(BondCreatingData memory data, ListAddress memory listContract) private {
-        ITreasure(listContract.treasury).initialize(data.withdrawAsset, data.depositAsset, data.owner, data.depositAsset, listContract.bonding, listContract.staking);
+        ITreasure(listContract.treasury).initialize(
+            data.withdrawAsset,
+            data.depositAsset,
+            data.owner,
+            data.depositAsset,
+            listContract.bonding,
+            listContract.staking
+        );
     }
 }
