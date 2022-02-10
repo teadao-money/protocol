@@ -77,7 +77,7 @@ interface ITeaBond {
         uint _fee
     ) external;
 
-    function redeem(address _recipient, bool _stake) external returns (uint);
+    function redeem(address _recipient) external returns (uint);
 
     function transferOwnership(address newOwner) external;
 }
@@ -93,8 +93,7 @@ interface ITeaPool {
         address _stablecoin,
         address bondCalculator,
         address treasury,
-        address dao,
-        address teaStaking) external returns (address);
+        address dao) external returns (address);
 }
 
 contract TeaPool is Ownable {
@@ -102,16 +101,24 @@ contract TeaPool is Ownable {
     using SafeERC20 for IERC20;
     using SafeMath for uint;
 
-    uint controlVariable = 11000;
-    uint vestingTerm = 500;
-    uint minimumPrice = 26000;
-    uint maxPayout = 300;
-    uint fee = 1000;
+    uint controlVariable;
+    uint vestingTerm;
+    uint minimumPrice;
+    uint maxPayout;
+    uint fee;
 
     address public bond;
     address public principle;
     address public tea;
     mapping(address => bool) public isBond721;
+
+    constructor (uint _controlVariable, uint _vestingTerm, uint _minimumPrice, uint _maxPayout, uint _fee) public {
+        controlVariable = _controlVariable;
+        vestingTerm = _vestingTerm;
+        minimumPrice = _minimumPrice;
+        maxPayout = _maxPayout;
+        fee = _fee;
+    }
 
     function initPool(
         address _admin,
@@ -119,12 +126,12 @@ contract TeaPool is Ownable {
         address _principle,
         address bondCalculator,
         address treasury,
-        address dao,
-        address teaStaking) external returns (address) {
+        address dao
+    ) external returns (address) {
 
         tea = _tea;
         principle = _principle;
-        bond = address(new TeaBond(_tea, _principle, bondCalculator, treasury, dao, teaStaking));
+        bond = address(new TeaBond(_tea, _principle, bondCalculator, treasury, dao));
         ITeaBond(bond).initialize(_admin, controlVariable, vestingTerm, maxPayout, fee);
         initOwnable(_admin);
 
@@ -143,7 +150,7 @@ contract TeaPool is Ownable {
     }
 
     function redeem() external onlyOwner {
-        ITeaBond(bond).redeem(address(this), false);
+        ITeaBond(bond).redeem(address(this));
     }
 
     function bond721(uint256 _amount) external {
@@ -162,7 +169,7 @@ contract TeaPoolFactory is Ownable {
     using SafeERC20 for IERC20;
 
     address public treasury;
-    address public dao;
+
     address public tea;
 
     address public teaStaking;
@@ -171,11 +178,10 @@ contract TeaPoolFactory is Ownable {
 
     mapping(address => bool) public supportTokenBond;
 
-    event CreatePool(address, address stablecoin, address _user);
+    event CreatePool(address indexed newPool, address indexed _user, address indexed stablecoin);
 
-    constructor(address _treasury, address _dao, address _tea, address _bondCalculator, address _teaStaking) public {
+    constructor(address _treasury, address _tea, address _bondCalculator, address _teaStaking) public {
         treasury = _treasury;
-        dao = _dao;
         tea = _tea;
         bondCalculator = _bondCalculator;
         teaStaking = _teaStaking;
@@ -192,14 +198,20 @@ contract TeaPoolFactory is Ownable {
 
     function createPool(
         address _user,
-        address _principle
+        address _principle,
+        address _dao,
+        uint _controlVariable,
+        uint _vestingTerm,
+        uint _minimumPrice,
+        uint _maxPayout,
+        uint _fee
     ) public {
         require(supportTokenBond[_principle], "stable coin not support");
-        address newPool = address(new TeaPool());
-        address newBond = ITeaPool(newPool).initPool(_user, tea, _principle, bondCalculator, treasury, dao, teaStaking);
+        address newPool = address(new TeaPool(_controlVariable, _vestingTerm, _minimumPrice, _maxPayout, _fee));
+        address newBond = ITeaPool(newPool).initPool(_user, tea, _principle, bondCalculator, treasury, _dao);
         ITeaTreasury(treasury).setDepositorOnlySetter(newBond, true);
         listPools.push(newPool);
-        emit CreatePool(newPool, _principle, _user);
+        emit CreatePool(newPool, _user, _principle);
     }
 
 }
