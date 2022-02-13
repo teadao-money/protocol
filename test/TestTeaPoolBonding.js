@@ -5,7 +5,6 @@ const PancakeFactory = artifacts.require("PancakeFactory");
 const PancakePair = artifacts.require("PancakePair");
 const WETH9 = artifacts.require("WETH");
 const BondingCalculator = artifacts.require("contracts/poolBonding/TeaPriceFeed.sol:PriceFeed");
-const BondTeaBNB = artifacts.require("TeaBond");
 const DAI = artifacts.require("DAI");
 const TeaBond = artifacts.require("TeaBond");
 const TeaPool = artifacts.require("TeaPool");
@@ -25,21 +24,6 @@ let addressPrivatekey = {};
 Object.entries(listWallets).forEach((item, index) => {
   addressPrivatekey[item[0]] = item[1].privateKey.toString("hex");
 });
-
-const { expectRevert } = require("openzeppelin-test-helpers");
-
-
-async function wait(ms) {
-  return new Promise(resolve => {
-    setTimeout(resolve, ms);
-  });
-}
-
-async function getReserves(pair) {
-  let reserve = await pair.getReserves();
-  console.log("Reserve 0: " + reserve[0] + " Reserve 1: " + reserve[1]);
-
-}
 
 
 contract("TeaToken\n", function(accounts) {
