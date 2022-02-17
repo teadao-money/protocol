@@ -28,19 +28,13 @@ Object.entries(listWallets).forEach((item, index) => {
 
 contract("TeaToken\n", function(accounts) {
   let governance = accounts[0];
-  let account1 = accounts[1];
-  let account2 = accounts[2];
-  let account3 = accounts[3];
   let account4 = accounts[4];
-  let account5 = accounts[5];
   let transaction;
   let pancakeFactory;
   let wETH9;
-  let pancakeRouter;
 
   let controlVariable = 11000;
   let vestingTerm = 500;
-  let minimumPrice = 26000;
   let maxPayout = 300;
   let fee = 1000;
 
