@@ -14,22 +14,6 @@ contract("tea price feeds", function(accounts) {
   let governance = accounts[0];
 
   describe("price feeds", function() {
-      // it("1", async function() {
-      //
-      //   let teaPriceFeedNFT = await TeaPriceFeedNFT.new();
-      //   console.log("1. teaPriceFeedNFT", teaPriceFeedNFT.address);
-      //
-      //   let teaPriceFeedNFTClient = await TeaPriceFeedNFTClient.new(teaPriceFeedNFT.address);
-      //   console.log("2. teaPriceFeedNFTClient", teaPriceFeedNFTClient.address);
-      //
-      //   let transaction = await teaPriceFeedNFT.setSupportCollection("0x2f2a88c990a072061563923b0229c2514e5df82e806eceaabc961eb7203fde85", true);
-      //   console.log("3. transaction teaPriceFeedNFT.setSupportCollection", transaction.tx);
-      //
-      //   transaction = await teaPriceFeedNFTClient.randomnessRequest("231234", "0x2f2a88c990a072061563923b0229c2514e5df82e806eceaabc961eb7203fde85");
-      //   console.log("4. teaPriceFeedNFTClient.randomnessRequest", transaction.tx);
-      //
-      // }).timeout(40000000000);
-
       it("2", async function() {
 
         let teaPriceFeedNFT = await TeaPriceFeedNFT.at("0x12c602FbCc91Ac7Fa45Aa3883B64b0641463AAFe");
