@@ -1,6 +1,3 @@
-## Sum
-![Alt text](../image1.png)
-
 ### TeaPoolFactory
 - Smart contarct tạo pool, trong đó nó sẽ gen ra 1 pool và 1 smc bond tương ứng.
 - Function:
