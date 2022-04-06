@@ -3,7 +3,6 @@ pragma solidity 0.7.5;
 
 pragma experimental ABIEncoderV2;
 
-import "hardhat/console.sol";
 
 contract Ownable {
     address private _owner;
