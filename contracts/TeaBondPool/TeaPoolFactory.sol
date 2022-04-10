@@ -4,8 +4,6 @@ pragma experimental ABIEncoderV2;
 
 import "./TeaBond.sol";
 
-import "hardhat/console.sol";
-
 interface IERC20 {
     function decimals() external view returns (uint8);
 

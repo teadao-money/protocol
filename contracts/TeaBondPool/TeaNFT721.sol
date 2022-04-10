@@ -1,11 +1,4 @@
 //https://bscscan.com/address/0xe6965b4f189dbdb2bd65e60abaeb531b6fe9580b#code
-/**
- *Submitted for verification at BscScan.com on 2021-12-05
-*/
-
-/**
- *Submitted for verification at BscScan.com on 2021-04-16
-*/
 
 // SPDX-License-Identifier: MIT
 
