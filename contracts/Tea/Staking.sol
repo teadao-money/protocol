@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.7.5;
 
 library SafeMath {
@@ -111,7 +112,7 @@ library SafeMath {
     }
 }
 
-interface IBEP20 {
+interface IERC20 {
     function decimals() external view returns (uint8);
     /**
      * @dev Returns the amount of tokens in existence.
@@ -406,43 +407,43 @@ library Address {
     }
 }
 
-library SafeBEP20 {
+library SafeERC20 {
     using SafeMath for uint256;
     using Address for address;
 
-    function safeTransfer(IBEP20 token, address to, uint256 value) internal {
+    function safeTransfer(IERC20 token, address to, uint256 value) internal {
         _callOptionalReturn(token, abi.encodeWithSelector(token.transfer.selector, to, value));
     }
 
-    function safeTransferFrom(IBEP20 token, address from, address to, uint256 value) internal {
+    function safeTransferFrom(IERC20 token, address from, address to, uint256 value) internal {
         _callOptionalReturn(token, abi.encodeWithSelector(token.transferFrom.selector, from, to, value));
     }
 
     /**
      * @dev Deprecated. This function has issues similar to the ones found in
-     * {IBEP20-approve}, and its usage is discouraged.
+     * {IERC20-approve}, and its usage is discouraged.
      *
      * Whenever possible, use {safeIncreaseAllowance} and
      * {safeDecreaseAllowance} instead.
      */
-    function safeApprove(IBEP20 token, address spender, uint256 value) internal {
+    function safeApprove(IERC20 token, address spender, uint256 value) internal {
         // safeApprove should only be called when setting an initial allowance,
         // or when resetting it to zero. To increase and decrease it, use
         // 'safeIncreaseAllowance' and 'safeDecreaseAllowance'
         // solhint-disable-next-line max-line-length
         require((value == 0) || (token.allowance(address(this), spender) == 0),
-            "SafeBEP20: approve from non-zero to non-zero allowance"
+            "SafeERC20: approve from non-zero to non-zero allowance"
         );
         _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, value));
     }
 
-    function safeIncreaseAllowance(IBEP20 token, address spender, uint256 value) internal {
+    function safeIncreaseAllowance(IERC20 token, address spender, uint256 value) internal {
         uint256 newAllowance = token.allowance(address(this), spender).add(value);
         _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));
     }
 
-    function safeDecreaseAllowance(IBEP20 token, address spender, uint256 value) internal {
-        uint256 newAllowance = token.allowance(address(this), spender).sub(value, "SafeBEP20: decreased allowance below zero");
+    function safeDecreaseAllowance(IERC20 token, address spender, uint256 value) internal {
+        uint256 newAllowance = token.allowance(address(this), spender).sub(value, "SafeERC20: decreased allowance below zero");
         _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));
     }
 
@@ -452,86 +453,71 @@ library SafeBEP20 {
      * @param token The token targeted by the call.
      * @param data The call data (encoded using abi.encode or one of its variants).
      */
-    function _callOptionalReturn(IBEP20 token, bytes memory data) private {
+    function _callOptionalReturn(IERC20 token, bytes memory data) private {
         // We need to perform a low level call here, to bypass Solidity's return data size checking mechanism, since
         // we're implementing it ourselves. We use {Address.functionCall} to perform this call, which verifies that
         // the target address contains contract code and also asserts for success in the low-level call.
 
-        bytes memory returndata = address(token).functionCall(data, "SafeBEP20: low-level call failed");
+        bytes memory returndata = address(token).functionCall(data, "SafeERC20: low-level call failed");
         if (returndata.length > 0) {// Return data is optional
             // solhint-disable-next-line max-line-length
-            require(abi.decode(returndata, (bool)), "SafeBEP20: BEP20 operation did not succeed");
+            require(abi.decode(returndata, (bool)), "SafeERC20: ERC20 operation did not succeed");
         }
     }
 }
 
-contract Ownable {
-    address private _owner;
+interface IOwnable {
+    function manager() external view returns (address);
 
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    function renounceManagement() external;
 
-    /**
-     * @dev Initializes the contract setting the deployer as the initial owner.
-     */
-    constructor ()  {
+    function pushManagement(address newOwner_) external;
+
+    function pullManagement() external;
+}
+
+contract Ownable is IOwnable {
+
+    address internal _owner;
+    address internal _newOwner;
+
+    event OwnershipPushed(address indexed previousOwner, address indexed newOwner);
+    event OwnershipPulled(address indexed previousOwner, address indexed newOwner);
+
+    constructor () {
         _owner = msg.sender;
-        emit OwnershipTransferred(address(0), msg.sender);
+        emit OwnershipPushed(address(0), _owner);
     }
 
-    /**
-     * @dev Returns the address of the current owner.
-     */
-    function owner() external view returns (address) {
+    function manager() public view override returns (address) {
         return _owner;
     }
 
-    /**
-     * @dev Throws if called by any account other than the owner.
-     */
-    modifier onlyOwner() {
-        require(isOwner(), "Ownable: caller is not the owner");
+    modifier onlyManager() {
+        require(_owner == msg.sender, "Ownable: caller is not the owner");
         _;
     }
 
-    /**
-     * @dev Returns true if the caller is the current owner.
-     */
-    function isOwner() public view returns (bool) {
-        return msg.sender == _owner;
-    }
-
-    /**
-     * @dev Leaves the contract without owner. It will not be possible to call
-     * `onlyOwner` functions anymore. Can only be called by the current owner.
-     *
-     * NOTE: Renouncing ownership will leave the contract without an owner,
-     * thereby removing any functionality that is only available to the owner.
-     */
-    function renounceOwnership() external onlyOwner {
-        emit OwnershipTransferred(_owner, address(0));
+    function renounceManagement() public virtual override onlyManager() {
+        emit OwnershipPushed(_owner, address(0));
         _owner = address(0);
     }
 
-    /**
-     * @dev Transfers ownership of the contract to a new account (`newOwner`).
-     * Can only be called by the current owner.
-     */
-    function transferOwnership(address newOwner) external onlyOwner {
-        _transferOwnership(newOwner);
+    function pushManagement(address newOwner_) public virtual override onlyManager() {
+        require(newOwner_ != address(0), "Ownable: new owner is the zero address");
+        emit OwnershipPushed(_owner, newOwner_);
+        _newOwner = newOwner_;
     }
 
-    /**
-     * @dev Transfers ownership of the contract to a new account (`newOwner`).
-     */
-    function _transferOwnership(address newOwner) internal {
-        require(newOwner != address(0), "Ownable: new owner is the zero address");
-        emit OwnershipTransferred(_owner, newOwner);
-        _owner = newOwner;
+    function pullManagement() public virtual override {
+        require(msg.sender == _newOwner, "Ownable: must be new owner to pull");
+        emit OwnershipPulled(_owner, _newOwner);
+        _owner = _newOwner;
     }
 }
 
 interface IsTEA {
-    function rebase(uint256 TEAProfit_, uint epoch_) external returns (uint256);
+    function rebase(uint256 ohmProfit_, uint epoch_) external returns (uint256);
 
     function circulatingSupply() external view returns (uint256);
 
@@ -544,15 +530,18 @@ interface IsTEA {
     function index() external view returns (uint);
 }
 
-interface ITreasury {
-    function mintRewards(address _recipient, uint _amount) external;
+interface IWarmup {
+    function retrieve(address staker_, uint amount_) external;
 }
 
+interface IDistributor {
+    function distribute() external returns (bool);
+}
 
 contract TeaStaking is Ownable {
 
     using SafeMath for uint256;
-    using SafeBEP20 for IBEP20;
+    using SafeERC20 for IERC20;
 
     address public immutable TEA;
     address public immutable sTEA;
@@ -562,24 +551,33 @@ contract TeaStaking is Ownable {
         uint number;
         uint endBlock;
         uint distribute;
-        uint staked;
     }
 
     Epoch public epoch;
+    address public distributor;
+    address public locker;
     uint public totalBonus;
-    address public immutable treasury;
-    uint256 public rateReward;// dec :10**6
+    address public warmupContract;
+    uint public warmupPeriod;
 
-    mapping(address => bool) public isDepositor;
-
-    constructor (address _TEA, address _sTEA, uint _epochLength, uint _firstEpochNumber, uint _firstEpochBlock, uint256 _rateReward, address _treasury) {
+    constructor (
+        address _TEA,
+        address _sTEA,
+        uint _epochLength,
+        uint _firstEpochNumber,
+        uint _firstEpochBlock
+    ) {
         require(_TEA != address(0));
         TEA = _TEA;
         require(_sTEA != address(0));
-        rateReward = _rateReward;
         sTEA = _sTEA;
-        epoch = Epoch({length : _epochLength, number : _firstEpochNumber, endBlock : _firstEpochBlock, distribute : 0, staked : 0});
-        treasury = _treasury;
+
+        epoch = Epoch({
+        length : _epochLength,
+        number : _firstEpochNumber,
+        endBlock : _firstEpochBlock,
+        distribute : 0
+        });
     }
 
     struct Claim {
@@ -589,13 +587,7 @@ contract TeaStaking is Ownable {
         bool lock; // prevents malicious delays
     }
 
-    function setRateReward(uint256 _rateReward) public onlyOwner {
-        rateReward = _rateReward;
-    }
-
-    function setDepositor(address _depositor, bool _result) public onlyOwner {
-        isDepositor[_depositor] = _result;
-    }
+    mapping(address => Claim) public warmupInfo;
 
     /**
         @notice stake TEA to enter warmup
@@ -603,20 +595,65 @@ contract TeaStaking is Ownable {
         @return bool
      */
     function stake(uint _amount, address _recipient) external returns (bool) {
-        require(isDepositor[msg.sender], "Excluded");
         rebase();
-        IBEP20(TEA).safeTransferFrom(msg.sender, address(this), _amount);
-        IBEP20(sTEA).safeTransfer(_recipient, _amount);
+
+        IERC20(TEA).safeTransferFrom(msg.sender, address(this), _amount);
+
+        Claim memory info = warmupInfo[_recipient];
+        require(!info.lock, "Deposits for account are locked");
+
+        warmupInfo[_recipient] = Claim({
+        deposit : info.deposit.add(_amount),
+        gons : info.gons.add(IsTEA(sTEA).gonsForBalance(_amount)),
+        expiry : epoch.number.add(warmupPeriod),
+        lock : false
+        });
+
+        IERC20(sTEA).safeTransfer(warmupContract, _amount);
         return true;
     }
 
-    function unstakeAll(bool _trigger) external {
+    /**
+        @notice retrieve sTEA from warmup
+        @param _recipient address
+     */
+    function claim(address _recipient) public {
+        Claim memory info = warmupInfo[_recipient];
+        if (epoch.number >= info.expiry && info.expiry != 0) {
+            delete warmupInfo[_recipient];
+            IWarmup(warmupContract).retrieve(_recipient, IsTEA(sTEA).balanceForGons(info.gons));
+        }
+    }
+
+    /**
+        @notice forfeit sTEA in warmup and retrieve TEA
+     */
+    function forfeit() external {
+        Claim memory info = warmupInfo[msg.sender];
+        delete warmupInfo[msg.sender];
+
+        IWarmup(warmupContract).retrieve(address(this), IsTEA(sTEA).balanceForGons(info.gons));
+        IERC20(TEA).safeTransfer(msg.sender, info.deposit);
+    }
+
+    /**
+        @notice prevent new deposits to address (protection from malicious activity)
+     */
+    function toggleDepositLock() external {
+        warmupInfo[msg.sender].lock = !warmupInfo[msg.sender].lock;
+    }
+
+    /**
+        @notice redeem sTEA for TEA
+        @param _amount uint
+        @param _trigger bool
+     */
+    function unstake(uint _amount, bool _trigger) external {
         if (_trigger) {
             rebase();
         }
-        uint256 _amount = IBEP20(sTEA).balanceOf(msg.sender);
-        IBEP20(sTEA).safeTransferFrom(msg.sender, address(this), _amount);
-        IBEP20(TEA).safeTransfer(msg.sender, _amount);
+        IERC20(sTEA).safeTransferFrom(msg.sender, address(this), _amount);
+        IERC20(TEA).safeTransfer(msg.sender, _amount);
     }
 
     /**
@@ -632,37 +669,78 @@ contract TeaStaking is Ownable {
      */
     function rebase() public {
         if (epoch.endBlock <= block.number) {
+
+            IsTEA(sTEA).rebase(epoch.distribute, epoch.number);
+
             epoch.endBlock = epoch.endBlock.add(epoch.length);
             epoch.number++;
 
-            uint staked = IsTEA(sTEA).circulatingSupply();
-            uint256 reward = staked.mul(rateReward).div(10 ** 6);
-            if (address(treasury) != address(0)) {
-                ITreasury(treasury).mintRewards(address(this), reward);
+            if (distributor != address(0)) {
+                IDistributor(distributor).distribute();
             }
 
-            uint balance = IBEP20(TEA).balanceOf(address(this));
+            uint balance = contractBalance();
+            uint staked = IsTEA(sTEA).circulatingSupply();
+
             if (balance <= staked) {
                 epoch.distribute = 0;
-                epoch.staked = staked;
             } else {
                 epoch.distribute = balance.sub(staked);
-                epoch.staked = staked;
             }
-            IsTEA(sTEA).rebase(epoch.distribute, epoch.number);
         }
+    }
+
+    /**
+        @notice returns contract TEA holdings, including bonuses provided
+        @return uint
+     */
+    function contractBalance() public view returns (uint) {
+        return IERC20(TEA).balanceOf(address(this)).add(totalBonus);
     }
 
     /**
         @notice provide bonus to locked staking contract
         @param _amount uint
      */
-    function giveLockBonus(address to, uint _amount) external onlyOwner {
+    function giveLockBonus(uint _amount) external {
+        require(msg.sender == locker);
         totalBonus = totalBonus.add(_amount);
-        IBEP20(sTEA).safeTransfer(to, _amount);
+        IERC20(sTEA).safeTransfer(locker, _amount);
     }
 
-    function pendingRewardRebase() public view returns (uint256){
-        return IsTEA(sTEA).circulatingSupply().mul(rateReward).div(10 ** 6);
+    /**
+        @notice reclaim bonus from locked staking contract
+        @param _amount uint
+     */
+    function returnLockBonus(uint _amount) external {
+        require(msg.sender == locker);
+        totalBonus = totalBonus.sub(_amount);
+        IERC20(sTEA).safeTransferFrom(locker, address(this), _amount);
+    }
+
+    enum CONTRACTS {DISTRIBUTOR, WARMUP, LOCKER}
+
+    /**
+        @notice sets the contract address for LP staking
+        @param _contract address
+     */
+    function setContract(CONTRACTS _contract, address _address) external onlyManager() {
+        if (_contract == CONTRACTS.DISTRIBUTOR) {// 0
+            distributor = _address;
+        } else if (_contract == CONTRACTS.WARMUP) {// 1
+            require(warmupContract == address(0), "Warmup cannot be set more than once");
+            warmupContract = _address;
+        } else if (_contract == CONTRACTS.LOCKER) {// 2
+            require(locker == address(0), "Locker cannot be set more than once");
+            locker = _address;
+        }
+    }
+
+    /**
+     * @notice set warmup period for new stakers
+     * @param _warmupPeriod uint
+     */
+    function setWarmup(uint _warmupPeriod) external onlyManager() {
+        warmupPeriod = _warmupPeriod;
     }
 }
