@@ -785,7 +785,7 @@ contract TeaBondDepository is Ownable {
         if (price_ < terms.minimumPrice) {
             price_ = terms.minimumPrice;
         } else if (terms.minimumPrice != 0) {
-//            terms.minimumPrice = 0;
+            //            terms.minimumPrice = 0;
         }
     }
 
