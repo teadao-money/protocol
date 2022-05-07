@@ -96,6 +96,6 @@ contract StakingHelper {
         IERC20( TEA ).transferFrom( msg.sender, address(this), _amount );
         IERC20( TEA ).approve( staking, _amount );
         IStaking( staking ).stake( _amount, _recipient );
-
+        IStaking( staking ).claim( _recipient );
     }
 }
