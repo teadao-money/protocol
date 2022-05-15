@@ -48,9 +48,13 @@ async function main() {
     const weth = await WETH9.deploy();
     console.log("8. weth address at https://testnet.bscscan.com/address/" + weth.address);
 
-    const PriceFeed = await ethers.getContractFactory("contracts/bondingTokenFactory/PriceFeed.sol:PriceFeed");
-    const priceFeed = await PriceFeed.deploy();
-    console.log("9. priceFeed address at https://testnet.bscscan.com/address/" + priceFeed.address);
+    let PriceFeed = await ethers.getContractFactory("contracts/BondingTokenFactory/PriceFeed.sol:PriceFeed");
+    const depositPriceFeed = await PriceFeed.deploy(8,206579288784);
+    console.log("9.1. depositPriceFeed address at https://testnet.bscscan.com/address/" + depositPriceFeed.address);
+
+    // PriceFeed = await ethers.getContractFactory("contracts/bondingTokenFactory/PriceFeed.sol:PriceFeed");
+    const withdrawPriceFeed = await PriceFeed.deploy(8,579288784);
+    console.log("9.2. withdrawPriceFeed address at https://testnet.bscscan.com/address/" + withdrawPriceFeed.address);
 
     const BondingFactory = await ethers.getContractFactory("BondingFactory");
     const bondingFactory = await BondingFactory.deploy(bondBEPImplement.address, bondBNBImplement.address, teaStakingImplement.address, steaImplement.address, teaTreasuryImplement.address);
@@ -59,7 +63,8 @@ async function main() {
     let transaction = await bondingFactory.createBonding({
         depositAsset: weth.address,
         withdrawAsset: tea.address,
-        priceFeed: priceFeed.address,
+        depositTokenPriceFeed: depositPriceFeed.address,
+        withdrawTokenPriceFeed: withdrawPriceFeed.address,
         dao: deployer.address,
         owner: deployer.address,
         totalSup: 100000000,
@@ -124,11 +129,15 @@ async function main() {
     transaction = await staking.unstakeAll(true);
     console.log("20. Unstake all tx at https://testnet.bscscan.com/tx/" + transaction.hash);
 
+    // PriceFeed = await ethers.getContractFactory("contracts/bondingTokenFactory/PriceFeed.sol:PriceFeed");
+    const depositPriceFeedV2 = await PriceFeed.deploy(8,100253181);
+    console.log("21. depositPriceFeed address at https://testnet.bscscan.com/address/" + depositPriceFeed.address);
 
     transaction = await bondingFactory.createBonding({
         depositAsset: dai.address,
         withdrawAsset: tea.address,
-        priceFeed: priceFeed.address,
+        depositTokenPriceFeed: depositPriceFeedV2.address,
+        withdrawTokenPriceFeed: withdrawPriceFeed.address,
         dao: deployer.address,
         owner: deployer.address,
         totalSup: 100000000,
@@ -139,7 +148,7 @@ async function main() {
         bondingFee: 100,
         _bondingType: 0,
     });
-    console.log("21. Create bonding tx at https://testnet.bscscan.com/tx/" + transaction.hash);
+    console.log("21.1 Create bonding tx at https://testnet.bscscan.com/tx/" + transaction.hash);
 
 
     receipt = await transaction.wait();
@@ -191,97 +200,97 @@ async function main() {
     console.log("30. Unstake all tx at https://testnet.bscscan.com/tx/" + transaction.hash);
 
 
-    try {
-        await run("verify:verify", {
-            address: daiBond.address,
-            constructorArguments: [tea.address, dai.address, treasury.address, MockDAO.address, zeroAddress],
-        });
-    } catch (e) {
-        console.log(e);
-
-    }
-
-    try {
-        await run("verify:verify", {
-            address: tea.address,
-            constructorArguments: [],
-        });
-    } catch (e) {
-    }
-
-    try {
-        await run("verify:verify", {
-            address: dai.address,
-            constructorArguments: [0],
-        });
-    } catch (e) {
-    }
-    try {
-        await run("verify:verify", {
-            address: frax.address,
-            constructorArguments: [0],
-        });
-    } catch (e) {
-    }
-    try {
-        await run("verify:verify", {
-            address: treasury.address,
-            constructorArguments: [tea.address, dai.address, dai.address, 0],
-        });
-    } catch (e) {
-    }
-    try {
-        await run("verify:verify", {
-            address: olympusBondingCalculator.address,
-            constructorArguments: [tea.address],
-        });
-    } catch (e) {
-        console.log(e);
-    }
-    try {
-        await run("verify:verify", {
-            address: staking.address,
-            constructorArguments: [tea.address, sTEA.address, epochLengthInBlocks, firstEpochNumber, firstEpochBlock],
-        });
-    } catch (e) {
-        console.log(e);
-
-    }
-    try {
-        await run("verify:verify", {
-            address: sTEA.address,
-            constructorArguments: [],
-        });
-    } catch (e) {
-        console.log(e);
-
-    }
-    try {
-        await run("verify:verify", {
-            address: distributor.address,
-            constructorArguments: [treasury.address, tea.address, epochLengthInBlocks, firstEpochBlock],
-        });
-    } catch (e) {
-        console.log(e);
-
-    }
-    try {
-        await run("verify:verify", {
-            address: stakingWarmup.address,
-            constructorArguments: [staking.address, sTEA.address],
-        });
-    } catch (e) {
-        console.log(e);
-    }
-    try {
-        await run("verify:verify", {
-            address: stakingHelper.address,
-            constructorArguments: [staking.address, tea.address],
-        });
-    } catch (e) {
-        console.log(e);
-
-    }
+    // try {
+    //     await run("verify:verify", {
+    //         address: daiBond.address,
+    //         constructorArguments: [tea.address, dai.address, treasury.address, MockDAO.address, zeroAddress],
+    //     });
+    // } catch (e) {
+    //     console.log(e);
+    //
+    // }
+    //
+    // try {
+    //     await run("verify:verify", {
+    //         address: tea.address,
+    //         constructorArguments: [],
+    //     });
+    // } catch (e) {
+    // }
+    //
+    // try {
+    //     await run("verify:verify", {
+    //         address: dai.address,
+    //         constructorArguments: [0],
+    //     });
+    // } catch (e) {
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: frax.address,
+    //         constructorArguments: [0],
+    //     });
+    // } catch (e) {
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: treasury.address,
+    //         constructorArguments: [tea.address, dai.address, dai.address, 0],
+    //     });
+    // } catch (e) {
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: olympusBondingCalculator.address,
+    //         constructorArguments: [tea.address],
+    //     });
+    // } catch (e) {
+    //     console.log(e);
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: staking.address,
+    //         constructorArguments: [tea.address, sTEA.address, epochLengthInBlocks, firstEpochNumber, firstEpochBlock],
+    //     });
+    // } catch (e) {
+    //     console.log(e);
+    //
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: sTEA.address,
+    //         constructorArguments: [],
+    //     });
+    // } catch (e) {
+    //     console.log(e);
+    //
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: distributor.address,
+    //         constructorArguments: [treasury.address, tea.address, epochLengthInBlocks, firstEpochBlock],
+    //     });
+    // } catch (e) {
+    //     console.log(e);
+    //
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: stakingWarmup.address,
+    //         constructorArguments: [staking.address, sTEA.address],
+    //     });
+    // } catch (e) {
+    //     console.log(e);
+    // }
+    // try {
+    //     await run("verify:verify", {
+    //         address: stakingHelper.address,
+    //         constructorArguments: [staking.address, tea.address],
+    //     });
+    // } catch (e) {
+    //     console.log(e);
+    //
+    // }
 
 
 }

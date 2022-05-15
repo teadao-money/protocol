@@ -58,9 +58,10 @@ interface ISToken {
 
 interface IBonding {
     function initialize(
-        address _milky,
+        address _paymentToken,
         address _principle,
-        address _calculator,
+        address _principlePriceFeed,
+        address _paymentTokenPriceFeed,
         address _treasury,
         address _dao,
         address _staking,
@@ -230,7 +231,8 @@ contract BondingFactory is Ownable {
         // withdraw token
         address withdrawAsset;
         // price feed to calculate data
-        address priceFeed;
+        address depositTokenPriceFeed;
+        address withdrawTokenPriceFeed;
         // the place own bonding fee
         address dao;
         address owner;
@@ -342,7 +344,8 @@ contract BondingFactory is Ownable {
         IBonding(listContract.bonding).initialize(
             data.withdrawAsset,
             data.depositAsset,
-            data.priceFeed,
+            data.depositTokenPriceFeed,
+            data.withdrawTokenPriceFeed,
             listContract.treasury,
             data.dao,
             listContract.staking,
