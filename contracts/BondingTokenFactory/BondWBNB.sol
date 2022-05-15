@@ -262,12 +262,9 @@ interface ITreasury {
 }
 
 interface IPriceData {
-    struct PriceData {
-        uint128 rate; // USD-rate, multiplied by 1e18.
-        uint64 resolveTime; // UNIX epoch when data is last resolved.
-    }
+    function latestAnswer() external view returns (int256 answer);
 
-    function getPrice(address _base) external view returns (PriceData memory);
+    function decimals() external view returns (uint8);
 }
 
 contract Pausable is Ownable {
@@ -339,7 +336,8 @@ contract BondBNBImplement is Singleton, Pausable {
     address public DAO;
     address public paymentToken; // token given as payment for bond
     address public principle; // token used to create bond
-    address public calculator;
+    IPriceData public principlePriceFeed;
+    IPriceData public paymentTokenPriceFeed;
     address public treasury;
 
     Terms public terms; // stores terms for new bonds
@@ -367,7 +365,8 @@ contract BondBNBImplement is Singleton, Pausable {
     function initialize(
         address _paymentToken,
         address _principle,
-        address _calculator,
+        address _principlePriceFeed,
+        address _paymentTokenPriceFeed,
         address _treasury,
         address _dao,
         address _staking,
@@ -383,8 +382,8 @@ contract BondBNBImplement is Singleton, Pausable {
         paymentToken = _paymentToken;
         require(_principle != address(0));
         principle = _principle;
-        require(_calculator != address(0));
-        calculator = _calculator;
+        principlePriceFeed = IPriceData(_principlePriceFeed);
+        paymentTokenPriceFeed = IPriceData(_paymentTokenPriceFeed);
         require(_treasury != address(0));
         treasury = _treasury;
         DAO = _dao;
@@ -454,7 +453,10 @@ contract BondBNBImplement is Singleton, Pausable {
         IWBNB(principle).deposit{value : _amount}();
         require(_depositor != address(0), "Invalid address");
         //Calculate lp token to paymentToken
-        uint value = uint256(IPriceData(calculator).getPrice(paymentToken).rate).mul(_amount).div(10 ** 18);
+        uint value = uint256(principlePriceFeed.latestAnswer()).mul(_amount).mul(paymentTokenPriceFeed.decimals())
+        .div(uint256(paymentTokenPriceFeed.latestAnswer())).div(principlePriceFeed.decimals());
+        // convert decimal of token
+        value = value.mul(10 ** IBEP20(paymentToken).decimals()).div(10 ** IBEP20(principle).decimals());
         //Apply discount
         uint payout = payoutFor(value);
         // must be > 0.01 paymentToken ( underflow protection )
