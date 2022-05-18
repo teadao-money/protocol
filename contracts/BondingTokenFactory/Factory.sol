@@ -271,6 +271,10 @@ contract BondingFactory is Ownable {
         treasuryImplement = _treasuryImplement;
     }
 
+    function listBondingLength() public view returns (uint256){
+        return listBonding.length;
+    }
+
     function setAddress(SetContractType _type, address _address) external onlyOwner {
         if (_type == SetContractType.BEP20_BONDING) {
             bondingBEP20Implement = _address;
