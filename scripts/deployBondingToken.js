@@ -48,7 +48,7 @@ async function main() {
     const weth = await WETH9.deploy();
     console.log("8. weth address at https://testnet.bscscan.com/address/" + weth.address);
 
-    let PriceFeed = await ethers.getContractFactory("contracts/BondingTokenFactory/PriceFeed.sol:PriceFeed");
+    let PriceFeed = await ethers.getContractFactory("contracts/BondingTokenFactory/MockPriceFeed.sol:PriceFeed");
     const depositPriceFeed = await PriceFeed.deploy(8,206579288784);
     console.log("9.1. depositPriceFeed address at https://testnet.bscscan.com/address/" + depositPriceFeed.address);
 

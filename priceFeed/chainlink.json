@@ -1,0 +1,4819 @@
+{
+  "bnb": {
+    "0x137924d7c36816e0dcaf016eb617cc2c92c05782": {
+      "description": "BNB / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 30975592158,
+        "timestamp": 1653144750
+      }
+    },
+    "0x178ba789e24a1d51e9ea3cb1db3b52917963d71d": {
+      "description": "BTC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2941578052590,
+        "timestamp": 1653144732
+      }
+    },
+    "0xfc3069296a691250ffdf21fe51340fdd415a76ed": {
+      "description": "ETH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 197663364476,
+        "timestamp": 1653144723
+      }
+    },
+    "0x76303936b9df69474a57352765faceca2bf9c7ef": {
+      "description": "BUSD / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3241024416487464,
+        "timestamp": 1653144252
+      }
+    },
+    "0x2dc202b56a03667cc240b290c2be2b8453e89ea1": {
+      "description": "USDT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99919027,
+        "timestamp": 1653064015
+      }
+    },
+    "0x7935a51addab8550d346feef34e02f67c9330109": {
+      "description": "CAKE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 455000000,
+        "timestamp": 1653144756
+      }
+    },
+    "0x7a6bb3a3c0c99ba43564017d7523a74ba0f7cb5d": {
+      "description": "BUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100127471,
+        "timestamp": 1653127552
+      }
+    },
+    "0x0b67ad077fa839f6737a1630c89ee1a1572989c6": {
+      "description": "LINK / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 704176192,
+        "timestamp": 1653144756
+      }
+    },
+    "0xe978daa50d3a8574f139c1e3fe5d511ddb323bc5": {
+      "description": "DOT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 981993828,
+        "timestamp": 1653144540
+      }
+    },
+    "0x94069ff23e3a962646638b2bb44d4d7f664dccbd": {
+      "description": "COMP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6763132097,
+        "timestamp": 1653144315
+      }
+    },
+    "0xb92b265908775b59517ec1fc6c6635f7e1d60f1d": {
+      "description": "LTC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6993000000,
+        "timestamp": 1653144357
+      }
+    },
+    "0x7008fded94a8ce68d01feb633c4d81c2be7a1b20": {
+      "description": "USDC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100017507,
+        "timestamp": 1653096688
+      }
+    },
+    "0x7457f14ce4773ebeb1352d2774ec384a54c2f665": {
+      "description": "AAVE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9156000000,
+        "timestamp": 1653144636
+      }
+    },
+    "0x827f05e3454cb2df99e9e639489922eadc6bdbf6": {
+      "description": "BCH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 19462752780,
+        "timestamp": 1653144459
+      }
+    },
+    "0xd0a597ffc7075e1449ece7feaa9880488ddb34fd": {
+      "description": "DOGE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 8421374,
+        "timestamp": 1653144750
+      }
+    },
+    "0xec1ca9c5dd897f832cde3d43bb041f5e01380757": {
+      "description": "MATIC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 64920000,
+        "timestamp": 1653144495
+      }
+    },
+    "0x5ba2b3a2a41141aa55fc72c40d6643aee12bd0b6": {
+      "description": "SXP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 46575202,
+        "timestamp": 1653144642
+      }
+    },
+    "0x916aadaceb786351c7e810c6a4e8071cf00ceec8": {
+      "description": "TUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100071637,
+        "timestamp": 1653066826
+      }
+    },
+    "0x52bd76d61d59a4f4b740fd31b97afad6217f960d": {
+      "description": "UNI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 523090292,
+        "timestamp": 1653144573
+      }
+    },
+    "0xd29cfb96e80fcba432713b7ae5086a6718d4e046": {
+      "description": "YFI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 917876000000,
+        "timestamp": 1653144690
+      }
+    },
+    "0x50204d36c231cd4f0de67545cd1e36c01336e46b": {
+      "description": "ADA / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1719430381265948,
+        "timestamp": 1653125371
+      }
+    },
+    "0x9c0ab19514d52196b09b04294937ecec2dc69950": {
+      "description": "ALPHA / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 502809394071540,
+        "timestamp": 1653144777
+      }
+    },
+    "0x717aaa3e50dd2f97723a5c76fc4db713b8a1a86d": {
+      "description": "AUTO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 16750263057,
+        "timestamp": 1653144468
+      }
+    },
+    "0x3331b2d33e9a472f6b34c150d47017d75b4cd088": {
+      "description": "BAND / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 5701170000000000,
+        "timestamp": 1653144492
+      }
+    },
+    "0x38d0f1dfe37aac059ad06b2d30ef60aa537f0b05": {
+      "description": "BCH / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 629313135236615500,
+        "timestamp": 1653144237
+      }
+    },
+    "0x7e90d60d3207a96faabb895c9c7dee2e2caba0fd": {
+      "description": "BTC / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 95174923706252840000,
+        "timestamp": 1653143922
+      }
+    },
+    "0x370d7b33330d40c55e8e71afd88efb31e9dcc620": {
+      "description": "CAKE / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 14684585942300408,
+        "timestamp": 1653143595
+      }
+    },
+    "0x3889e2fd71bb7a0600da48d98cd579b2a1d39f51": {
+      "description": "CFX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 8660405,
+        "timestamp": 1653140856
+      }
+    },
+    "0x4a2a603d64c807c6532053ef808117048ac9990a": {
+      "description": "CREAM / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 69279188238436655,
+        "timestamp": 1653144393
+      }
+    },
+    "0x390b935cdb6fc4924d203a398da160178efe7b8a": {
+      "description": "DOT / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 31670624091632820,
+        "timestamp": 1653135832
+      }
+    },
+    "0x97b83b0984b16a57e00a0a819e568632239a7a76": {
+      "description": "DPI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9616866950,
+        "timestamp": 1653144339
+      }
+    },
+    "0x73d17dbb9d4d520ca4d260c359994d8a2aa4cda3": {
+      "description": "EOS / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 4214423822885039,
+        "timestamp": 1653139902
+      }
+    },
+    "0x2d0bf844d0edec6aa7ace14b9f1252654882b3d5": {
+      "description": "EOS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 130522528,
+        "timestamp": 1653144270
+      }
+    },
+    "0x2813fab00b38189acb8d805a687222ae1034d53a": {
+      "description": "ETH / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 6374650996688527000,
+        "timestamp": 1653143925
+      }
+    },
+    "0x2812a17bed8d6da2845fef144b803a0573047b94": {
+      "description": "FIL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 801000000,
+        "timestamp": 1653144399
+      }
+    },
+    "0xfb3e6157ba71c0d8853690c4fd3ff88109a79103": {
+      "description": "ICP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 811637804,
+        "timestamp": 1653144339
+      }
+    },
+    "0x678f2883bb67104273229463dda15ee841584b36": {
+      "description": "LINK / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 22734440781930404,
+        "timestamp": 1653144741
+      }
+    },
+    "0x80519ecad69b8e43c6690b73554379bfdf0ef79e": {
+      "description": "LTC / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 226012063553882810,
+        "timestamp": 1653132809
+      }
+    },
+    "0x586e5572217d68643e1de6a0d40cb37b0961a11a": {
+      "description": "ONT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 27365245,
+        "timestamp": 1653144243
+      }
+    },
+    "0x6ffa7c72ccd821a4db68fd75ee465dd09aa8c088": {
+      "description": "PAXG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 184932122424,
+        "timestamp": 1653060544
+      }
+    },
+    "0x14e9d15c1ecd428606c443ed715631b5c444a49e": {
+      "description": "SOL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5037238091,
+        "timestamp": 1653144474
+      }
+    },
+    "0xb7ee93d3e0586571d481f9d967d82383bb460b38": {
+      "description": "TRX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 7496609,
+        "timestamp": 1653144597
+      }
+    },
+    "0x9cef3aed2fb67c2d7e43f816a61fd9604ae741b7": {
+      "description": "TUSD Reserves",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 122930885767600000,
+        "timestamp": 1653058567
+      }
+    },
+    "0x8dbb48f934b02e891e19ec09f76b54f3ed5f01ee": {
+      "description": "TWT / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 2117721016241838,
+        "timestamp": 1653131777
+      }
+    },
+    "0xc98fb42526666963d2b43a1ca5c3dc04fe744cdb": {
+      "description": "USDC / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3236223055331477,
+        "timestamp": 1653144285
+      }
+    },
+    "0x3a349ea050fc1702e67238d16e1543d3b786b0d0": {
+      "description": "USDN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 97383221,
+        "timestamp": 1653127021
+      }
+    },
+    "0xf1703b483822f12bf0d84296f2266196ca9c352b": {
+      "description": "USDT / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3237293622531564,
+        "timestamp": 1653144231
+      }
+    },
+    "0xc04121e448dac0ba66c0c76b28b5512cf08bd41a": {
+      "description": "VAI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 95417057,
+        "timestamp": 1653141945
+      }
+    },
+    "0xe7458d6c046757dd5f7b807c4c32188d8b96d155": {
+      "description": "WING / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 332608647,
+        "timestamp": 1653144576
+      }
+    },
+    "0xc54645d805aca807e7f40b9308d159bb62939e3a": {
+      "description": "XAU / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 184666499550,
+        "timestamp": 1653144615
+      }
+    },
+    "0x0877689c510f099fb968906223ab0a3f556d4f2b": {
+      "description": "XRP / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1334500000000000,
+        "timestamp": 1653142287
+      }
+    },
+    "0x5c0f367a778857b36e88b553df132b232ac34901": {
+      "description": "XRP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 41242718,
+        "timestamp": 1653144501
+      }
+    },
+    "0x1255e2748a3a26b248d654b5194cdefc4594b90a": {
+      "description": "XTZ / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 5800813784253079,
+        "timestamp": 1653136950
+      }
+    },
+    "0x5ceefec70fb4819b9ce2deaa6355c77e3243e640": {
+      "description": "XTZ / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 179624221,
+        "timestamp": 1653144450
+      }
+    },
+    "0xd051e4050dad55285eedbc186095c0ccb7054944": {
+      "description": "XVS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 485244938,
+        "timestamp": 1653144561
+      }
+    },
+    "0xd2a2976cdf5098971daa56878212cdb24ecb0cbb": {
+      "description": "YFI / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 29744536128851640000,
+        "timestamp": 1653143238
+      }
+    },
+    "0x32a3dcb7f09b46b32b664c59ab0e78aaa852484e": {
+      "description": "ALPACA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 31834943,
+        "timestamp": 1653144468
+      }
+    },
+    "0x2e9c2b44d3f5702d2654c20260e8e010656d9777": {
+      "description": "ATOM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1098589692,
+        "timestamp": 1653144261
+      }
+    },
+    "0x5c8c6c45dcf57aeae4d7ba4f613b6fc38ef7d18b": {
+      "description": "AUD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 70368000,
+        "timestamp": 1653144690
+      }
+    },
+    "0x4c935c5c9a6badc0855ad3b5867bcff90c8bd5ec": {
+      "description": "BETH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 191122508163,
+        "timestamp": 1653144330
+      }
+    },
+    "0x8d06d8b3a37d9a1bca3df055bddd07f1639af4e6": {
+      "description": "BIFI / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 2061668100589485000,
+        "timestamp": 1653144540
+      }
+    },
+    "0x43c70db4018857eb6c4d6aa40880f144033aeaf5": {
+      "description": "BIFI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 63741960065,
+        "timestamp": 1653138249
+      }
+    },
+    "0x2f92dc0711ada3dc255e2197e7c15c8adc6b6537": {
+      "description": "BRL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 20490686,
+        "timestamp": 1653077884
+      }
+    },
+    "0x343fb6a2ed16509a934880abc82d0251867b70f4": {
+      "description": "BTC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 14883123292857691000,
+        "timestamp": 1653089674
+      }
+    },
+    "0x736ea2edd72991908770e35ab6309aae760aff93": {
+      "description": "BTT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 111,
+        "timestamp": 1653144573
+      }
+    },
+    "0xacbf98e423bb8458397df2d4cc9ee031879fd59f": {
+      "description": "C98 / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 51659341,
+        "timestamp": 1653144468
+      }
+    },
+    "0x6c9c9757f0478bc38bf73abda27ac42864de0645": {
+      "description": "CHF / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 102588725,
+        "timestamp": 1653142290
+      }
+    },
+    "0x9ebb8330dff88f3d9e743e8240177cdcd3292103": {
+      "description": "CHR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 21923660,
+        "timestamp": 1653144240
+      }
+    },
+    "0xbbf2db65e8c6941f343b963b136d2a321487bbd8": {
+      "description": "CREAM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2140402330,
+        "timestamp": 1653143460
+      }
+    },
+    "0x3f57d674804dfc9f5ca927531969012c5c9095bd": {
+      "description": "CRV / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 117505383,
+        "timestamp": 1653144378
+      }
+    },
+    "0xf9e6f8660649f9762e0a721d666b8b5931ebb994": {
+      "description": "DEGO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 130860567,
+        "timestamp": 1653143976
+      }
+    },
+    "0xf0ece271b1c02128e30c5797c0d76b2c9c36ec17": {
+      "description": "DF / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3720454,
+        "timestamp": 1653144171
+      }
+    },
+    "0x512d05a6fe786cd9174dff990cbf5be26f713be1": {
+      "description": "DODO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 13749125,
+        "timestamp": 1653144675
+      }
+    },
+    "0xccfbd394173338caa4eca63ffda87785d08b788d": {
+      "description": "DYDX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 200559040,
+        "timestamp": 1653144621
+      }
+    },
+    "0xd2528b74ca91bb07b9bd9685ce533367c6fa657c": {
+      "description": "EUR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105624504,
+        "timestamp": 1653144747
+      }
+    },
+    "0xb2b7c2d554f52daec37974b2e335c98cda8ceb3a": {
+      "description": "FET / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 17043221,
+        "timestamp": 1653144450
+      }
+    },
+    "0x04c433e64257a34ac9a547c6887b496d5b8692be": {
+      "description": "FTT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2999687903,
+        "timestamp": 1653144351
+      }
+    },
+    "0x36eb75b819df05fb868b16074df1a9c4354082c0": {
+      "description": "FXS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 628000000,
+        "timestamp": 1653144471
+      }
+    },
+    "0xe0a34b8fc5e80c877fd568bd22b49e1bca977b6f": {
+      "description": "GBP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 124921300,
+        "timestamp": 1653078571
+      }
+    },
+    "0x0d5ab38d37a5b5427b971e10f99e8c06599260af": {
+      "description": "HIGH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 213700000,
+        "timestamp": 1653144726
+      }
+    },
+    "0x4d70d497cef3674be370586230f9a2f4b30cff11": {
+      "description": "INJ / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 225536967,
+        "timestamp": 1653144498
+      }
+    },
+    "0x6f3f35cc510232e41179f9010cf12b1b48538a91": {
+      "description": "JPY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 781883,
+        "timestamp": 1653144753
+      }
+    },
+    "0xe6ff236a76594a9a1da727ca42b29c7b3ac0d45a": {
+      "description": "LINA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 894006,
+        "timestamp": 1653144507
+      }
+    },
+    "0xf23d01646fe967a6c403defdff24299040fd4935": {
+      "description": "LIT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 60281767,
+        "timestamp": 1653144666
+      }
+    },
+    "0xf1eed6f4a9006b3cf8f547b36d055b97ef50de8b": {
+      "description": "MASK / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 206683499,
+        "timestamp": 1653144477
+      }
+    },
+    "0xf23c2aa8c9e8e2e6e48257c495e624ca87bb14bc": {
+      "description": "MDX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9661300,
+        "timestamp": 1653144510
+      }
+    },
+    "0x87a69a2988b33ea745008a47486890232630aabf": {
+      "description": "MIM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99761714,
+        "timestamp": 1653101275
+      }
+    },
+    "0x69adf893f3bad6d59c7d6cc07bed04611dc5f9f4": {
+      "description": "MIR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 20544284,
+        "timestamp": 1653144792
+      }
+    },
+    "0xfdbadeb62c0922ce833250530ad5ec0962a01bcb": {
+      "description": "NGN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 240900,
+        "timestamp": 1653124006
+      }
+    },
+    "0xcb2ac1d2e2582de7b5efbb174f04b1d8ecd2d043": {
+      "description": "ONG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 37570300,
+        "timestamp": 1653140019
+      }
+    },
+    "0x4cdedbd6b9a46c097c052452ccb232c28946d484": {
+      "description": "RAMP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 4185427,
+        "timestamp": 1653144720
+      }
+    },
+    "0x066d0cd30f981a96e2fe4f958c5e7f4999be0adf": {
+      "description": "REEF / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 442893,
+        "timestamp": 1653144573
+      }
+    },
+    "0x19ec74fd763db58b77e6ec6b556b9c594ca67abb": {
+      "description": "SHIB / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1165,
+        "timestamp": 1653144651
+      }
+    },
+    "0xd49253aa71f5d5bee98b00c15ddfa47850faf5a0": {
+      "description": "SPELL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 141700,
+        "timestamp": 1653144696
+      }
+    },
+    "0x27dc934b3ca31c570f575ee3165dffe0cf6daeef": {
+      "description": "SUSHI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 137492736,
+        "timestamp": 1653144357
+      }
+    },
+    "0x3919b595abf85c6a0716421f5dd1def47eee093d": {
+      "description": "TORN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3666227700,
+        "timestamp": 1653144174
+      }
+    },
+    "0x48a14238b339873b34fcc55c943c2ee67ffe60ff": {
+      "description": "WOO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 19418616,
+        "timestamp": 1653144492
+      }
+    },
+    "0x168f55dfe619e37fe2393c3ba3c831647f8617c0": {
+      "description": "XAG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2175950000,
+        "timestamp": 1653144306
+      }
+    },
+    "0x266c0eefc329bb610b1e79267d836bca88648aae": {
+      "description": "XLM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 12849022,
+        "timestamp": 1653144858
+      }
+    },
+    "0xe0a0bc15e8cbe87e9b6307693a368085e164878a": {
+      "description": "XVS / BNB",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 15688598421781955,
+        "timestamp": 1653144738
+      }
+    },
+    "0xab05dfc2e4af7fb1b512306e3e0a3617992bb6e2": {
+      "description": "YFII / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 118849000000,
+        "timestamp": 1653144318
+      }
+    },
+    "0x0d14d66dcb20b9ec4e9679ac8e4775a314d2e298": {
+      "description": "ZIL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5087992,
+        "timestamp": 1653144480
+      }
+    },
+    "0x338b40caaef0267191a1869ac5ef9e7945949aea": {
+      "description": "Calculated SAVAX / USD",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 30091279261868727451,
+        "timestamp": 1653144489
+      }
+    }
+  },
+  "eth": {
+    "0x37bc7498f4ff12c19678ee8fe19d713b87f6a9e6": {
+      "description": "ETH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 197586600000,
+        "timestamp": 1653144905
+      }
+    },
+    "0xae74faa92cb67a95ebcab07358bc222e33a34da7": {
+      "description": "BTC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2937527261643,
+        "timestamp": 1653144905
+      }
+    },
+    "0xdfd03bfc3465107ce570a0397b247f546a42d0fa": {
+      "description": "LINK / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 698138618,
+        "timestamp": 1653141797
+      }
+    },
+    "0xdec0a100ead1faa37407f0edc76033426cf90b82": {
+      "description": "DAI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100100000,
+        "timestamp": 1653145079
+      }
+    },
+    "0xa964273552c1dba201f5f000215f5bd5576e8f93": {
+      "description": "USDT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99890158,
+        "timestamp": 1653133461
+      }
+    },
+    "0x158228e08c52f3e2211ccbc8ec275fa93f6033fc": {
+      "description": "DAI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 509557797437195,
+        "timestamp": 1653105760
+      }
+    },
+    "0xe5bbbdb2bb953371841318e1edfbf727447cef2e": {
+      "description": "USDC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 507148461538461,
+        "timestamp": 1653118057
+      }
+    },
+    "0x789190466e21a8b78b8027866cbbdc151542a26c": {
+      "description": "USDC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100009383,
+        "timestamp": 1653131310
+      }
+    },
+    "0x7de0d6fce0c128395c488cb4df667cdbfb35d7de": {
+      "description": "USDT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 505888542636286,
+        "timestamp": 1653118211
+      }
+    },
+    "0xbba12740de905707251525477bad74985dec46d2": {
+      "description": "LINK / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3539637674993173,
+        "timestamp": 1653126124
+      }
+    },
+    "0xdf0da6b3d19e4427852f2112d0a963d8a158e9c7": {
+      "description": "AAVE / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 46200000000000000,
+        "timestamp": 1653086959
+      }
+    },
+    "0xe3f0dede4b499c07e12475087ab1a084b5f93bc0": {
+      "description": "AAVE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9129007392,
+        "timestamp": 1653144466
+      }
+    },
+    "0xc45ebd0f901ba6b2b8c7e70b717778f055ef5e6d": {
+      "description": "BNB / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 30912558460,
+        "timestamp": 1653144455
+      }
+    },
+    "0x81076d6ff2620ea9dd7ba9c1015f0d09a3a732e6": {
+      "description": "BTC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 14878858553187310000,
+        "timestamp": 1653089365
+      }
+    },
+    "0x45bb69b89d60878d1e42522342ffca9f2077dd84": {
+      "description": "SUSD / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 508890000000000,
+        "timestamp": 1653132971
+      }
+    },
+    "0x9534df8f2c9289bbdb0c736e9fef402b20f1828e": {
+      "description": "TUSD / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 508455616909200,
+        "timestamp": 1653112917
+      }
+    },
+    "0x68577f915131087199fe48913d8b416b3984fd38": {
+      "description": "UNI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 518950786,
+        "timestamp": 1653142204
+      }
+    },
+    "0x6b39588d2fc7990cc81544dfd4674c909e9efeea": {
+      "description": "ZRX / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 214994363935442,
+        "timestamp": 1653136366
+      }
+    },
+    "0x821f24daca9ad4910c1ede316d2713fc923da698": {
+      "description": "BAT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 194299742496564,
+        "timestamp": 1653142296
+      }
+    },
+    "0x5952c7f1ab270d22d677762be3dad0ba9e5cd23d": {
+      "description": "BUSD / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 507637404754531,
+        "timestamp": 1653114758
+      }
+    },
+    "0xbe4274dfb7801948e2cc2a913744e9498ddc8d20": {
+      "description": "DOT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 981993828,
+        "timestamp": 1653144549
+      }
+    },
+    "0xb3b1882c0a7eb5097f12547bcd20dc6fae7ac8a6": {
+      "description": "KNC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1285226950355108,
+        "timestamp": 1653127726
+      }
+    },
+    "0x4b35f7854e1fd8291f4ec714ac3ebb1dea450585": {
+      "description": "MATIC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 64889053,
+        "timestamp": 1653144466
+      }
+    },
+    "0xffc14a3b26708545bccf8e915e2e8348123f5460": {
+      "description": "MKR / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 709799020504379400,
+        "timestamp": 1653138224
+      }
+    },
+    "0xbafe3cb0e563e914806a99d547bdbf2cfcf5fdf6": {
+      "description": "SNX / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1291010000000000,
+        "timestamp": 1653139083
+      }
+    },
+    "0x06ce8be8729b6ba18dd3416e3c223a5d4db5e755": {
+      "description": "SNX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 255848936,
+        "timestamp": 1653139968
+      }
+    },
+    "0x8a4d74003870064d41d4f84940550911fbfccf04": {
+      "description": "YFI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 914707694746,
+        "timestamp": 1653143379
+      }
+    },
+    "0x7f7b323291c052de18926396176d384c4a8e19e2": {
+      "description": "AUD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 70462700,
+        "timestamp": 1653079727
+      }
+    },
+    "0x6eac850f531d0588c0114f1e93f843b78669e6d2": {
+      "description": "COMP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6733128813,
+        "timestamp": 1653144351
+      }
+    },
+    "0x9405e02996aa6f2176e2748eefbcedd405870cee": {
+      "description": "LRC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 247658343981268,
+        "timestamp": 1653144229
+      }
+    },
+    "0x46b77070f9256523c2f31c333b72c3e102f8a8a7": {
+      "description": "MANA / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 548160133334422,
+        "timestamp": 1653127281
+      }
+    },
+    "0xc2eafb9df3a063a3a610f66b30ad0185a6c34f9d": {
+      "description": "REP / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3537159034966592,
+        "timestamp": 1653140530
+      }
+    },
+    "0xea5f70faa03f5c30b96029635c8d431d1a3cd1b8": {
+      "description": "XAU / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 184597500000,
+        "timestamp": 1653079824
+      }
+    },
+    "0xd2bdd1e01fd2f8d7d42b209c111c7b32158b5a42": {
+      "description": "1INCH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 93254972,
+        "timestamp": 1653144277
+      }
+    },
+    "0xd054be48ae13a89a82744373f647a755df7cae17": {
+      "description": "BCH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 19364465131,
+        "timestamp": 1653144159
+      }
+    },
+    "0x549ae844ab6b4a6eb466f98dffbc1fc9224e316d": {
+      "description": "CAD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 77911000,
+        "timestamp": 1653075585
+      }
+    },
+    "0x33cca8e7420114db103d61bd39a72ff65e46352d": {
+      "description": "DOGE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 8422466,
+        "timestamp": 1653144626
+      }
+    },
+    "0x02f878a94a1ae1b15705acd65b5519a46fe3517e": {
+      "description": "EUR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105553650,
+        "timestamp": 1653075585
+      }
+    },
+    "0x785433d8b06d77d68df6be63944742130a4530d1": {
+      "description": "Fast Gas / Gwei",
+      "checkEnable": "true",
+      "decimals": 0,
+      "latestRounddata": {
+        "answer": 21511864508,
+        "timestamp": 1653143756
+      }
+    },
+    "0x568b8fd03992f56bf240958d22f5a6fcf7bd850b": {
+      "description": "GBP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 124873000,
+        "timestamp": 1653075754
+      }
+    },
+    "0x908edc7e1974ecab1ca7164424bc4cac287d83ad": {
+      "description": "MKR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 140094217936,
+        "timestamp": 1653141670
+      }
+    },
+    "0x7213536a36094cd8a768a5e45203ec286cba2d74": {
+      "description": "SUSHI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 137352927,
+        "timestamp": 1653144351
+      }
+    },
+    "0x4d839a486ec0b1c9b0d9e9d397993ba5b150cb34": {
+      "description": "XRP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 41061772,
+        "timestamp": 1653101030
+      }
+    },
+    "0xbc3c868763b7c15d0ce527af455041919e9c07b1": {
+      "description": "ADA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 52583117,
+        "timestamp": 1653105966
+      }
+    },
+    "0x71c8d42d35ed9276543fca95d80ae0858553bf44": {
+      "description": "ALPHA / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 77735326698401,
+        "timestamp": 1653140530
+      }
+    },
+    "0xa5d9a0247b75353f3d756d321e3f4db59528c82c": {
+      "description": "BOND / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1774289596777547,
+        "timestamp": 1653144508
+      }
+    },
+    "0x7c8719f3683585a242a67c73f6f3c98362004da4": {
+      "description": "CHF / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 102517700,
+        "timestamp": 1653059106
+      }
+    },
+    "0x9d6acd34d481512586844fd65328bd358d306752": {
+      "description": "COMP / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 34100000000000000,
+        "timestamp": 1653102251
+      }
+    },
+    "0xb4c4a493ab6356497713a78ffa6c60fb53517c63": {
+      "description": "CRV / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 117400000,
+        "timestamp": 1653144455
+      }
+    },
+    "0x0c7907d97b7f708ecda1a0b3124d32cd8b1e3920": {
+      "description": "ETC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2034385370,
+        "timestamp": 1653144347
+      }
+    },
+    "0x7a4297b2fd0ba2f5687efac4df487b1c7b71392b": {
+      "description": "HT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 699136985,
+        "timestamp": 1653075134
+      }
+    },
+    "0x01a1f73b1f4726eb6eb189ffa5cbb91af8e14025": {
+      "description": "JPY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 782000,
+        "timestamp": 1653069388
+      }
+    },
+    "0xbc60258f775683ea28048030806ad3a80c4a33ae": {
+      "description": "KNC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 253724608,
+        "timestamp": 1653144516
+      }
+    },
+    "0xda31bc2b08f22ae24aed5f6eb1e71e96867ba196": {
+      "description": "STETH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 191868231745,
+        "timestamp": 1653143909
+      }
+    },
+    "0xd01bbb3afed2cb5ca92ca3834d441dc737f0da70": {
+      "description": "SUSHI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 695021813261798,
+        "timestamp": 1653144351
+      }
+    },
+    "0xdeb43523e2857b7ec29d078c77b73709d958c62f": {
+      "description": "XAG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2175295000,
+        "timestamp": 1653076396
+      }
+    },
+    "0x0fc3657899693648bba4dbd2d8b33b82e875105d": {
+      "description": "AVAX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2942170343,
+        "timestamp": 1653144218
+      }
+    },
+    "0x2f2c0c1727ce8c429a237ddfbbb87357893fbd5d": {
+      "description": "BAL / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3861233926697785,
+        "timestamp": 1653110375
+      }
+    },
+    "0x82263275fbf3fa92c6ee81632725b6bfbe4b02da": {
+      "description": "BNT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 135000000,
+        "timestamp": 1653063203
+      }
+    },
+    "0xfe67209f6fe3ba6ce36d0941700085c194e958df": {
+      "description": "CNY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 14940900,
+        "timestamp": 1653116813
+      }
+    },
+    "0x57560ea88060739107399670d8905ffca3b57d08": {
+      "description": "CREAM / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 10798512411164610,
+        "timestamp": 1653137802
+      }
+    },
+    "0x7002049fdca829ed7082efa03860b078ad4b5efe": {
+      "description": "DASH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5758569942,
+        "timestamp": 1653144277
+      }
+    },
+    "0xdbd66e8d31f506e0cc8cb2f346de4c7fa3f655de": {
+      "description": "ENJ / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 346163611587128,
+        "timestamp": 1653127791
+      }
+    },
+    "0xea7c55976844396f3bd4c89f66988b8b5be5e96a": {
+      "description": "EOS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 130674293,
+        "timestamp": 1653144432
+      }
+    },
+    "0x4be991b4d560bba8308110ed1e0d7f8da60acf6a": {
+      "description": "FEI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 505630250000000,
+        "timestamp": 1653118056
+      }
+    },
+    "0x1d244648d5a63618751d006886268ae3550d0dfd": {
+      "description": "FEI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100212756,
+        "timestamp": 1653144466
+      }
+    },
+    "0xb4dd24b6b98ea9c18e2196e166f17b15f77b0a07": {
+      "description": "FIL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 795561441,
+        "timestamp": 1653133122
+      }
+    },
+    "0xbdb80d19dea36eb7f63bdfd2bdd4033b2b7e8e4d": {
+      "description": "FTM / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 192340680000000,
+        "timestamp": 1653141039
+      }
+    },
+    "0x3679da959892f0b87e66f08626842f48be1956a2": {
+      "description": "HEGIC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 763090,
+        "timestamp": 1653132808
+      }
+    },
+    "0x86e345d4113e1105053a81240c75b56b437da6ef": {
+      "description": "KRW / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 78400,
+        "timestamp": 1653066308
+      }
+    },
+    "0xfe3d09d8bad5da65e0160cf0cb53f6115fb6ea8b": {
+      "description": "LTC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6993000000,
+        "timestamp": 1653144463
+      }
+    },
+    "0x751d87122c81f0ece576338c400ebb978d039188": {
+      "description": "MLN / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 15146296190934048,
+        "timestamp": 1653107643
+      }
+    },
+    "0xd48aa1699f49760611d6e1af7a4588998ded42bd": {
+      "description": "NZD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 64018000,
+        "timestamp": 1653078176
+      }
+    },
+    "0x8d6d808ec1f8803b54e2286bd6992f5601fcf3a8": {
+      "description": "RAI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1538746900000000,
+        "timestamp": 1653061928
+      }
+    },
+    "0xee34b3ce92a6b635450b9cc6faa976f70a106be7": {
+      "description": "REN / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 72715270374550,
+        "timestamp": 1653132117
+      }
+    },
+    "0xdf30249744a419891f822ea4a9e80cd76d7fbd23": {
+      "description": "SOL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 4981262906,
+        "timestamp": 1653076392
+      }
+    },
+    "0x9257d83a0dda413ca24f66dd32a056bc2ebafd2e": {
+      "description": "Total Marketcap / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 131325725246200000000,
+        "timestamp": 1653110124
+      }
+    },
+    "0x2935a4dc7643d6fbbcb70e33bf3f009614f076f9": {
+      "description": "UMA / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1840134800000000,
+        "timestamp": 1653144953
+      }
+    },
+    "0xc1d1d0da0fcf78157ea25d0e64e3be679813a1f7": {
+      "description": "UNI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 2616530000000000,
+        "timestamp": 1653100962
+      }
+    },
+    "0xf6eeca2fd1ace8c17389b119de983e9fd9a8ee8f": {
+      "description": "XTZ / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 179500000,
+        "timestamp": 1653144455
+      }
+    },
+    "0xb2f68c82479928669b0487d1daed6ef47b63411e": {
+      "description": "1INCH / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 465194967694129,
+        "timestamp": 1653059822
+      }
+    },
+    "0x910e014bba427e9fcb48b4d314dc81f840d7b6e3": {
+      "description": "ADX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 23931300,
+        "timestamp": 1653144277
+      }
+    },
+    "0xfaaa7460ed59c12e204349766ce73cf5202e6ad6": {
+      "description": "AMP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1308851,
+        "timestamp": 1653144587
+      }
+    },
+    "0xb92ee05e7514ffedddbcd76f5e3064691f6ec79e": {
+      "description": "AMPL / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 458298191397918,
+        "timestamp": 1653145103
+      }
+    },
+    "0xd5090674b4653240cd94ee886484ca808c6e6694": {
+      "description": "AMPL / USD",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 896533000000000000,
+        "timestamp": 1653091203
+      }
+    },
+    "0x7b14df2fb3e02215fa5525ac8a5abdaaa6314ac0": {
+      "description": "ANT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1075689700000000,
+        "timestamp": 1653142943
+      }
+    },
+    "0x16423b2b6873225e26564b182b3318afcdbfcade": {
+      "description": "AXS / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 10502760739379845,
+        "timestamp": 1653108604
+      }
+    },
+    "0x35c04c3983879cce777fb2ef793a210bb0221a89": {
+      "description": "BAND / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 175993680,
+        "timestamp": 1653144383
+      }
+    },
+    "0xf9bf9ca442e15c607b2d4b6fe01f7fa59a016554": {
+      "description": "BNB / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 154582759920135450,
+        "timestamp": 1653117114
+      }
+    },
+    "0x9a4458d02449ef9b42562205718679a8b4204962": {
+      "description": "BNT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 690910000000000,
+        "timestamp": 1653144765
+      }
+    },
+    "0x0ebdc65e7e9132cb41ac5cbd0101b799d7adb475": {
+      "description": "BRL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 20509450,
+        "timestamp": 1653077175
+      }
+    },
+    "0xdc270a69016940937cc7ee5984faf66b38e43316": {
+      "description": "BTM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 976095,
+        "timestamp": 1653122519
+      }
+    },
+    "0x6cea38508b186de36aafd0f3b513e708691bc0c4": {
+      "description": "CacheGold PoR USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 8892220000000,
+        "timestamp": 1653085899
+      }
+    },
+    "0xdc182f6e7461fe1fe442665615aa44f70f978db3": {
+      "description": "CELO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 128690949,
+        "timestamp": 1653144159
+      }
+    },
+    "0x5382a9dd1036ad485809b247260fac47b42cca6f": {
+      "description": "CELR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1796429,
+        "timestamp": 1653144508
+      }
+    },
+    "0x3dafe91e795409576ddb983d891e5fb5c61439a1": {
+      "description": "CRO / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 95469919740175,
+        "timestamp": 1653143212
+      }
+    },
+    "0x7f67ca2ce5299a67acd83d52a064c5b8e41ddb80": {
+      "description": "CRV / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 593500000000000,
+        "timestamp": 1653144244
+      }
+    },
+    "0x720192921a4b6fb026fa52bf03f991b65b740147": {
+      "description": "CTSI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 96002326978707,
+        "timestamp": 1653144709
+      }
+    },
+    "0xff889c4ae464663129daa05f6a8554efe0983677": {
+      "description": "CelsiusX Cardano->Ethereum ADA PoR",
+      "checkEnable": "true",
+      "decimals": 6,
+      "latestRounddata": {
+        "answer": 24330657358588,
+        "timestamp": 1653134957
+      }
+    },
+    "0x3c644976a1abab551c18c1f5aa590a42c5955fad": {
+      "description": "CelsiusX Bitcoin->Ethereum BTC PoR",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 35105000000,
+        "timestamp": 1653131960
+      }
+    },
+    "0x9f8ceab64c64f73c042280a7879de732c9a41cd9": {
+      "description": "CelsiusX Dogecoin->Ethereum DOGE PoR",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6539998320650119,
+        "timestamp": 1653132722
+      }
+    },
+    "0x0d60a27891250d7a7f78d6c279689164d704189e": {
+      "description": "DODO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 13870110,
+        "timestamp": 1653145031
+      }
+    },
+    "0xb95188f011e49a60fc6c743b1bc93b38651a204e": {
+      "description": "ETH / XDR",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 143800073860,
+        "timestamp": 1653114420
+      }
+    },
+    "0x920e5dc12e7500c6571c63d4bba19c62e99d6883": {
+      "description": "EURT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105100000,
+        "timestamp": 1653128353
+      }
+    },
+    "0x02e59ce2921e982a481c6ddb709b76c33397eb14": {
+      "description": "FOX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 15778097,
+        "timestamp": 1653142296
+      }
+    },
+    "0x61eb091ea16a32ea5b880d0b3d09d518c340d750": {
+      "description": "FRAX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100000000,
+        "timestamp": 1653144351
+      }
+    },
+    "0x2006d56f8ddb210ad009cf8d71aee4f6488cfa49": {
+      "description": "FTT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 15147982089147824,
+        "timestamp": 1653108719
+      }
+    },
+    "0x9d78092775dfe715dfe1b0d71ac1a4d6e3652559": {
+      "description": "FXS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 627708760,
+        "timestamp": 1653089034
+      }
+    },
+    "0x299e74895b4de8df505c43146d0555983859034b": {
+      "description": "GNO / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 106393438285689990,
+        "timestamp": 1653113187
+      }
+    },
+    "0x9c2c487dad6c8e5bb49dc6908a29d95a234faad8": {
+      "description": "GUSD / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 508471033511988,
+        "timestamp": 1653078767
+      }
+    },
+    "0x6a805f2580b8d75d40331c26c074c2c42961e7f2": {
+      "description": "GUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100073384,
+        "timestamp": 1653141785
+      }
+    },
+    "0x6d479c888d29aef7ed210f202f49c0b22c03601e": {
+      "description": "INJ / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 225483350,
+        "timestamp": 1653118594
+      }
+    },
+    "0xdb15a26827a6bab43aa6d99994f96c61138d68db": {
+      "description": "IOST / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1679068,
+        "timestamp": 1653105525
+      }
+    },
+    "0x861334dec28b3ba71dffb1abf4e57d4ad3964b5f": {
+      "description": "NMR / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 6470135198893459,
+        "timestamp": 1653079824
+      }
+    },
+    "0xe4e345594375b54f395b54c41bd8b370a302bf69": {
+      "description": "NMR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1280962187,
+        "timestamp": 1653063105
+      }
+    },
+    "0x06812a2035bda4707107539725902e065622cee7": {
+      "description": "OCEAN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 22116866,
+        "timestamp": 1653144277
+      }
+    },
+    "0x51aa283a37771b33101e88658c440951ee0ae02d": {
+      "description": "OGN / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 118942373156926,
+        "timestamp": 1653135624
+      }
+    },
+    "0x7009033c0d6702fd2dfad3478d2ae4e3b6acb966": {
+      "description": "OHM / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 26390030000000000,
+        "timestamp": 1653125150
+      }
+    },
+    "0x46f030f9a570abb4bf21bac93042d97059bd0350": {
+      "description": "OKB / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1223000000,
+        "timestamp": 1653118776
+      }
+    },
+    "0x34b41725cf934866a4b89d65395f15af2cb9ae89": {
+      "description": "OMG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 249530877,
+        "timestamp": 1653145165
+      }
+    },
+    "0x8b1668905367a2efb610e7aa1dc6f4f26d1f7268": {
+      "description": "ONT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 27444039,
+        "timestamp": 1653144537
+      }
+    },
+    "0x782ee2b86316d04f226ba416d5df5358a2d6102f": {
+      "description": "ORN / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 696280000000000,
+        "timestamp": 1653085777
+      }
+    },
+    "0x932354aea65a17b265bf22d29f7132ecfe86747d": {
+      "description": "OXT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 12993438,
+        "timestamp": 1653144787
+      }
+    },
+    "0x8034d486fc2620f87a9c32a1fb746d20ed9bfb96": {
+      "description": "PAX / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 511339959668733,
+        "timestamp": 1653062685
+      }
+    },
+    "0xe7b27118b92d3a23afea153953fed8853dbfa8fa": {
+      "description": "PAX / RESERVES",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 101260643420000000,
+        "timestamp": 1653072126
+      }
+    },
+    "0x66d35ccd808317870198793a96b88ab69dcae53b": {
+      "description": "PAXG / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 947007080000000000,
+        "timestamp": 1653062953
+      }
+    },
+    "0xc84e8cf8c30775d4639364c759fd0abdb941db9c": {
+      "description": "PAXG / RESERVES",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 32644061100000,
+        "timestamp": 1653072238
+      }
+    },
+    "0xc4aa0d2237a823f99fe2dc74f993eebdf5524489": {
+      "description": "PERP / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 589010000000000,
+        "timestamp": 1653136171
+      }
+    },
+    "0xf4060f80f295b34e0c2471461ba43745aeb186d6": {
+      "description": "PHP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1914200,
+        "timestamp": 1653111513
+      }
+    },
+    "0x2abfc56aaa39be7a946ec39aac5d452e30614df1": {
+      "description": "RAI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 301336227,
+        "timestamp": 1653143379
+      }
+    },
+    "0x9396244286769ee43e995404c59674a4b72da064": {
+      "description": "RAMP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 4137149,
+        "timestamp": 1653143379
+      }
+    },
+    "0x3d0bb55d0d2f255d7a0eab8a53a91b3369728e36": {
+      "description": "REN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 14402951,
+        "timestamp": 1653144218
+      }
+    },
+    "0x9adf01321833a5cba51b9f8a4c420c7e62481ae5": {
+      "description": "REP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 699338173,
+        "timestamp": 1653144159
+      }
+    },
+    "0xd7fc11b34d7bae2e94b958c4ab06d950f0bd4c3e": {
+      "description": "RLC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 453609395162186,
+        "timestamp": 1653103832
+      }
+    },
+    "0xe65e6c462119c311d57fd31bdeba502cccc504b4": {
+      "description": "RUNE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 290050840,
+        "timestamp": 1653144391
+      }
+    },
+    "0x724d08f4688cda05d8e3243db9db1b20c90f3a05": {
+      "description": "STMX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 936666,
+        "timestamp": 1653144277
+      }
+    },
+    "0xcfc1c64e721bc034ab894302b78149b3c7a1066d": {
+      "description": "SXP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 46225302,
+        "timestamp": 1653144277
+      }
+    },
+    "0x20086d92838c475fc3ade8b745efb33213793080": {
+      "description": "TOMO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 54947471,
+        "timestamp": 1653125573
+      }
+    },
+    "0xc1d757bee6bcdd45093979bfe60d341b833b2db0": {
+      "description": "TRIBE / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 127873262729433,
+        "timestamp": 1653080596
+      }
+    },
+    "0xaba1eace8627c15324890315e942a4fbd73b70e0": {
+      "description": "TRU / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9542999,
+        "timestamp": 1653133108
+      }
+    },
+    "0xdd860a2ad1b6ebdf2b17d7d01d65a7be3926be84": {
+      "description": "TRX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 7494835,
+        "timestamp": 1653144587
+      }
+    },
+    "0x0ed1bcc400acd34593451e76f854992198995f52": {
+      "description": "TUSD Reserves",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 122639183627600000,
+        "timestamp": 1653091230
+      }
+    },
+    "0x05e0706523171942009295e4025bb538c1c8d68e": {
+      "description": "TUSD Supply",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 122456602905116800,
+        "timestamp": 1653091211
+      }
+    },
+    "0xa33b7fc3ae1189e31cdeb888fd369cd8a7a9c141": {
+      "description": "WAVES / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 559758424,
+        "timestamp": 1653096500
+      }
+    },
+    "0x2c9a8c2caeb80feb24048587a10bfb6aeff601c5": {
+      "description": "WING / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 333071933,
+        "timestamp": 1653144570
+      }
+    },
+    "0xf09828103d306f50af7e3132adb6def77c6d96f7": {
+      "description": "XMR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 17917211256,
+        "timestamp": 1653144495
+      }
+    },
+    "0xaa5aa80e416f9d32ffe6c390e24410d02d203f70": {
+      "description": "YFI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 4662458766487032000,
+        "timestamp": 1653143459
+      }
+    },
+    "0x6951b03911592b3fc33d44f4ea5ea32a830e57d8": {
+      "description": "YGG / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 323246896938098,
+        "timestamp": 1653144868
+      }
+    },
+    "0x8a5f9072dff314de5533e41c0241f3fd66f2bddf": {
+      "description": "ZEC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 10309922717,
+        "timestamp": 1653144106
+      }
+    },
+    "0x3d47ef9690bd00c77c568b73140dc20f34453766": {
+      "description": "ZRX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 42764622,
+        "timestamp": 1653144583
+      }
+    },
+    "0xd423c9a9ad8c21c97bdee2e74f8098625aa4f329": {
+      "description": "eFIL PoR",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 127530375584000000000000,
+        "timestamp": 1653110622
+      }
+    },
+    "0x04cde3a52a72c2d56923c94242bfc15a8d9d9e36": {
+      "description": "sDEFI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 289334068566,
+        "timestamp": 1653144259
+      }
+    },
+    "0x1187272a0e3a603ec4734cec73a0880055ecc593": {
+      "description": "sUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99876422,
+        "timestamp": 1653082753
+      }
+    },
+    "0xb622b7d6d9131cf6a1230eba91e5da58dbea6f59": {
+      "description": "WBTC PoR",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 27651320821799,
+        "timestamp": 1653083709
+      }
+    },
+    "0x1c8c38602067268b6c518f9f41e59b832422cc56": {
+      "description": "AKRO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 345329,
+        "timestamp": 1653141169
+      }
+    },
+    "0x82550112a8093a04debebc95d69718ee133236b5": {
+      "description": "ALBT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9039110,
+        "timestamp": 1653120197
+      }
+    },
+    "0x64a119dcf78e7e3fced89c429f6f47bf0cd80250": {
+      "description": "ALCX / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 16127707681097880,
+        "timestamp": 1653088461
+      }
+    },
+    "0xb49322ff269d67a5af0718c19463ec9ee7bf821e": {
+      "description": "ALCX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3153254987,
+        "timestamp": 1653108696
+      }
+    },
+    "0xb5ae82b7677875875c5e526fb6bb2cfb325d9230": {
+      "description": "ALGO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 42680000,
+        "timestamp": 1653095463
+      }
+    },
+    "0xbbc9ab3f66d0b934089fdcceda3615a6bb879633": {
+      "description": "ANKR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3751946,
+        "timestamp": 1653144455
+      }
+    },
+    "0xa99999b1475f24037e8b6947abbc7710676e77dd": {
+      "description": "APE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 784655689,
+        "timestamp": 1653118645
+      }
+    },
+    "0x2ecaf21f39e9074cb45ec4742ab264ca0a0cbb59": {
+      "description": "AUCTION / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 625907060,
+        "timestamp": 1653078326
+      }
+    },
+    "0xd9b4ac554e3eefe84ae80f5dee0d45926233160b": {
+      "description": "AUDIO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 42218403,
+        "timestamp": 1653144626
+      }
+    },
+    "0xeddf0df82006a477c87c2e16ffdef0d97631e941": {
+      "description": "AUTO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 16559030948,
+        "timestamp": 1653093869
+      }
+    },
+    "0xbd9350a3a2fd6e3ad0a053a567f2609a1bf6c505": {
+      "description": "BAL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 765307751,
+        "timestamp": 1653088344
+      }
+    },
+    "0xdf9f750a94bf2faea84ab783927290fe5e0f7606": {
+      "description": "BAND / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 883915688517644,
+        "timestamp": 1653143633
+      }
+    },
+    "0xd90ca9ac986e453cf51d958071d68b82d17a47e6": {
+      "description": "BAT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 38522740,
+        "timestamp": 1653144626
+      }
+    },
+    "0xcc0ae233b21a820ed550b2e23c146114e06a3a47": {
+      "description": "BETA / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 56135574067090,
+        "timestamp": 1653115698
+      }
+    },
+    "0x8f226fdc030b8ea27fcdff5c3d4810d0bf8ddcaa": {
+      "description": "BICO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 70400000,
+        "timestamp": 1653144244
+      }
+    },
+    "0x382db44bcfb92c398b93e5ff6cc100fc321140c9": {
+      "description": "BIT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 80200000,
+        "timestamp": 1653059098
+      }
+    },
+    "0x73dc1b226f7dfac353bdb41a27c4212213e6af07": {
+      "description": "BUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100111744,
+        "timestamp": 1653126958
+      }
+    },
+    "0x468f99a1fcdf25b508d256a25698fb7c4e6dd649": {
+      "description": "C98 / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 51584472,
+        "timestamp": 1653131798
+      }
+    },
+    "0x1c026c25271c1bfba95b65c848f734a23ea62d4e": {
+      "description": "CAKE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 453467623,
+        "timestamp": 1653144339
+      }
+    },
+    "0xb864d98a8d5f16d41f021a5ba9d3d26e78d0d1fa": {
+      "description": "CEL / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 389236381273809,
+        "timestamp": 1653120026
+      }
+    },
+    "0xb2ad164c008da54fceac79ef18c0a8fe2d935865": {
+      "description": "CRO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 18689200,
+        "timestamp": 1653139992
+      }
+    },
+    "0x30f3037f0e13d6bded3c5b7809994f47e9656b4a": {
+      "description": "CSPR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3857344,
+        "timestamp": 1653104517
+      }
+    },
+    "0x5e3c7bdf06c35f88c6c0de739ed1c04767e330f9": {
+      "description": "CTX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 391982843,
+        "timestamp": 1653135956
+      }
+    },
+    "0x8d73ac44bf11cadcdc050bb2bccae8c519555f1a": {
+      "description": "CVX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 964205169,
+        "timestamp": 1653132636
+      }
+    },
+    "0xf1f7f7bfcc5e9d6bb8d9617756bec06a5cbe1a49": {
+      "description": "CVX / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 4938468476840195,
+        "timestamp": 1653131552
+      }
+    },
+    "0x8a25a79dc89e594d2e1209797bf874172d3168c9": {
+      "description": "DNT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 28159126000000,
+        "timestamp": 1653117832
+      }
+    },
+    "0xfe0583d4df4b79e61407308c8e382b8f36f87d39": {
+      "description": "EGLD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9118489438,
+        "timestamp": 1653118244
+      }
+    },
+    "0xcbbe4ff0d8add07cce71afc0ccdf3492b8eaa76a": {
+      "description": "ENJ / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 68576400,
+        "timestamp": 1653144694
+      }
+    },
+    "0x7813c776cd8eab537028b4499d467b1f1b86b14c": {
+      "description": "EPS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 16071231,
+        "timestamp": 1653138443
+      }
+    },
+    "0x14eaf768906587468f438755cffb91227c14b8e5": {
+      "description": "EURS RESERVES",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 11544262988000000,
+        "timestamp": 1653118646
+      }
+    },
+    "0x8ff1d1c1f5af922e40756c82bb6b6ab8d84f1869": {
+      "description": "FET / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 16812211,
+        "timestamp": 1653060174
+      }
+    },
+    "0x9965ad91b4877d29c246445011ce370b3890c5c2": {
+      "description": "FIL / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 4044806248559717,
+        "timestamp": 1653088990
+      }
+    },
+    "0x3c640c857f1ff57ff4e24cff1924f14a9bb9f2ad": {
+      "description": "FLOW / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 275296840,
+        "timestamp": 1653076242
+      }
+    },
+    "0xf649bc5c0e99bdeb06702e3db242b9f93de44462": {
+      "description": "FOR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1916954,
+        "timestamp": 1653144199
+      }
+    },
+    "0x56f98706c14df5c290b02cec491bb4c20834bb51": {
+      "description": "FRAX / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 504800000000000,
+        "timestamp": 1653119506
+      }
+    },
+    "0x1692c66463c88db0f945d17fb16ba4f1b6fb64d9": {
+      "description": "FRONT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 26610696,
+        "timestamp": 1653098939
+      }
+    },
+    "0x398381563cc93a0cd62534d775f2207a307e9add": {
+      "description": "FTT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2972867176,
+        "timestamp": 1653059962
+      }
+    },
+    "0x91401cedcbfd9680ce193a5f54e716504233e998": {
+      "description": "GRT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 78024867216909,
+        "timestamp": 1653141978
+      }
+    },
+    "0x0f486f358b3d04aea6800efa260e01286d8a50f1": {
+      "description": "HBAR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9970963,
+        "timestamp": 1653059302
+      }
+    },
+    "0xad940ed1a74878c7bb0fa2678e2fbfc24df11b9d": {
+      "description": "HEGIC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3860165267922,
+        "timestamp": 1653135005
+      }
+    },
+    "0xea23780dc14d1ac9eb3ab203a9bb7c1a6660615e": {
+      "description": "HIGH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 214000000,
+        "timestamp": 1653144933
+      }
+    },
+    "0x05b83a5209bed4299f056ef1cf4f1283ebb1dd27": {
+      "description": "HUSD / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 505306948968404,
+        "timestamp": 1653119009
+      }
+    },
+    "0xc0e24b6394bb7b0f05ec70c0299e5e7058e82ec2": {
+      "description": "ICP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 808416125,
+        "timestamp": 1653144259
+      }
+    },
+    "0x156710f56dc5f0c022505a9ffe95b0b51a7c5c9a": {
+      "description": "IDR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6815,
+        "timestamp": 1653096289
+      }
+    },
+    "0xc1f2929b9449ef97c5a75fd10fd0542984422f8b": {
+      "description": "ILV / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 147410760000000000,
+        "timestamp": 1653060441
+      }
+    },
+    "0x3f00247dc3bc14a8dcfa682318ce566b1f34343a": {
+      "description": "IMX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 86664197,
+        "timestamp": 1653144277
+      }
+    },
+    "0x32a54c3376bbd9f1a9f03500ed54a6ae957eb9da": {
+      "description": "INR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1285019,
+        "timestamp": 1653130736
+      }
+    },
+    "0x61b5793cd5f454d2b25ba1acb5c1aa1728f67e1c": {
+      "description": "KP3R / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 74890392000000000,
+        "timestamp": 1653139648
+      }
+    },
+    "0x630163b84674b2b404fb6036a510574f259c5cb7": {
+      "description": "KSM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 7468743136,
+        "timestamp": 1653093559
+      }
+    },
+    "0x7898accc83587c3c55116c5230c17a6cd9c71bad": {
+      "description": "LDO / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 656626870906949,
+        "timestamp": 1653134910
+      }
+    },
+    "0xb82a0803df982412daee9d82826395e3f0bed1a2": {
+      "description": "LON / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 435160680000000,
+        "timestamp": 1653117973
+      }
+    },
+    "0x2715d13c40f322094311c282f58b021df64456ce": {
+      "description": "LRC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 49037990,
+        "timestamp": 1653144463
+      }
+    },
+    "0x7be21aef96e2faeb8dc0d07306814319ca034cad": {
+      "description": "MANA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 107127655,
+        "timestamp": 1653133169
+      }
+    },
+    "0x9dced5f7f7cc675dbea34acfe45f05033ad83454": {
+      "description": "MASK / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 206735054,
+        "timestamp": 1653144508
+      }
+    },
+    "0x18f0112e30769961af90fdee0d1c6b27e6d72d92": {
+      "description": "MIM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99633768,
+        "timestamp": 1653133831
+      }
+    },
+    "0x18ef1e5b2efc6e7b0439e4df6bde24aa2445c25e": {
+      "description": "MIR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 20377000,
+        "timestamp": 1653131663
+      }
+    },
+    "0xd9701835dc47837b53d5cfe95eb5a66f42b56901": {
+      "description": "NEAR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 588463242,
+        "timestamp": 1653126742
+      }
+    },
+    "0x68cb58532e31ea6fa5c46c1db5d55279d6385afa": {
+      "description": "NGN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 240900,
+        "timestamp": 1653131584
+      }
+    },
+    "0x9565b54d720656508b14d3d19ab45e462a01338d": {
+      "description": "NU / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 86644026053872,
+        "timestamp": 1653088573
+      }
+    },
+    "0x4b75fe6e4a53a510abc39c7328b0b06e74a3f624": {
+      "description": "OCEAN / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 111469646776604,
+        "timestamp": 1653143946
+      }
+    },
+    "0x9aae856973a0cafa084b82f7bc4c6c2893a9139b": {
+      "description": "OHMv2 / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 8700773432803610,
+        "timestamp": 1653120034
+      }
+    },
+    "0xa1b2e83815723e4e4bbf437e56f65b6aafd5754b": {
+      "description": "OMG / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1242775819178525,
+        "timestamp": 1653116503
+      }
+    },
+    "0xcb00334a422fc8538794f3ce0149540a95f9e228": {
+      "description": "PHA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 12466896,
+        "timestamp": 1653084154
+      }
+    },
+    "0x10341666434880065495f5b3c69621ccac43bc82": {
+      "description": "PLA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 57202638,
+        "timestamp": 1653143934
+      }
+    },
+    "0xcf8d2378a4929708cb648966f31cb686ded81469": {
+      "description": "PUNDIX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 47895877,
+        "timestamp": 1653060085
+      }
+    },
+    "0x511bbc68cc94ce769115bd735b74039f5d9dc8d0": {
+      "description": "RARI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1719451400000000,
+        "timestamp": 1653133732
+      }
+    },
+    "0xa27cfd69345a6e121284a3c0ae07bb64b707cdd2": {
+      "description": "RSR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 429826,
+        "timestamp": 1653092269
+      }
+    },
+    "0xa8156eff735dce35eb01b119f6a7f4b55944184a": {
+      "description": "RUNE / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1450604002792237,
+        "timestamp": 1653093574
+      }
+    },
+    "0xdf627aa5b9c024818c6950fdad7e4c16d93b10ca": {
+      "description": "SAND / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 129233907,
+        "timestamp": 1653132499
+      }
+    },
+    "0xc96129c796f03bb21ac947efc5329cd1f560305b": {
+      "description": "SGD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 72525250,
+        "timestamp": 1653080224
+      }
+    },
+    "0x8640b23468815902e011948f3ab173e1e83f9879": {
+      "description": "SPELL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 141641,
+        "timestamp": 1653144626
+      }
+    },
+    "0x162aa56ef75ab11ce2573ece62b579f4b40a58db": {
+      "description": "SRM / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 558323800462293,
+        "timestamp": 1653085676
+      }
+    },
+    "0xdc193fa6f30635e569ae23f1bd61c9aa9f522044": {
+      "description": "STAKE / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3397888540972932,
+        "timestamp": 1653138443
+      }
+    },
+    "0x29236dfcae0aee2d6da157f3b6835830c75875ad": {
+      "description": "SWAP / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 203570432861822,
+        "timestamp": 1653128663
+      }
+    },
+    "0xadcd1b19a0190e18d961993c5671d3f5d47c13ea": {
+      "description": "TRY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6288198,
+        "timestamp": 1653131490
+      }
+    },
+    "0x98953e9c76573e06ec265bdde1dbb89fa02d56d3": {
+      "description": "TUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100039835,
+        "timestamp": 1653059776
+      }
+    },
+    "0xf0aad281fae14fe35ee30074d881863c0cdd5b03": {
+      "description": "UMEE / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 18060000000000,
+        "timestamp": 1653064934
+      }
+    },
+    "0xae395258fbce63eceeb2cc0b73d4875797f4598d": {
+      "description": "USDK / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99997331,
+        "timestamp": 1653061425
+      }
+    },
+    "0x6a1ef9bf93048533c49a1eed984c080608f7db6a": {
+      "description": "USDN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 97193566,
+        "timestamp": 1653121507
+      }
+    },
+    "0xf3d70857b489ecc6768d0982b773e1cba9e1f00b": {
+      "description": "USDP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100114284,
+        "timestamp": 1653141785
+      }
+    },
+    "0x64c15b20f7272676f3f619229ba79048f5602f27": {
+      "description": "VET / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3019363,
+        "timestamp": 1653075873
+      }
+    },
+    "0x6759193ddf8e9a33b675c06e1b97d28b6be45186": {
+      "description": "VGX / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 404000000000000,
+        "timestamp": 1653130109
+      }
+    },
+    "0xbd624b453d0a882b87cbf85febdcf493cffbd8d9": {
+      "description": "WNXM / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 8561405643136615,
+        "timestamp": 1653074412
+      }
+    },
+    "0x5c3d1309d8b6e37eff9fd6c258e1544549b39d22": {
+      "description": "WOO / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 97327633000000,
+        "timestamp": 1653071989
+      }
+    },
+    "0x0deaf87519d434dcf74551b2e907af18d2304946": {
+      "description": "WTI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 11001000000,
+        "timestamp": 1653079485
+      }
+    },
+    "0xc7997467468ba9c6c14005548aeef151a6f5a3da": {
+      "description": "XLM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 12874939,
+        "timestamp": 1653144351
+      }
+    },
+    "0xab5041d720ab0cdb3342f5bc7ac6cc14b6c70727": {
+      "description": "Calculated XSUSHI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 177918700,
+        "timestamp": 1653144136
+      }
+    },
+    "0x9f966149b7dd6ab61440ec4d4b853f4605739e73": {
+      "description": "XVS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 484554862,
+        "timestamp": 1653144532
+      }
+    },
+    "0x20df77bb4ce1478e89a7461cace8dc016f9198e4": {
+      "description": "YFII / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 599734954073938700,
+        "timestamp": 1653141989
+      }
+    },
+    "0xeef04eb9045c52731b5a0231169b5206950bec9c": {
+      "description": "ZAR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6330967,
+        "timestamp": 1653105660
+      }
+    },
+    "0xd7623f1d24b35c392862fb67c9716564a117c9de": {
+      "description": "WBTC / BTC",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100020000,
+        "timestamp": 1653077235
+      }
+    }
+  },
+  "polygon": {
+    "0x4dd6655ad5ed7c06c882f496e3f42ace5766cb89": {
+      "description": "ETH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 197807265596,
+        "timestamp": 1653145849
+      }
+    },
+    "0x1278c74c3b2f8c3bca0089b4e128faf023615ecf": {
+      "description": "MATIC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 65110209,
+        "timestamp": 1653145849
+      }
+    },
+    "0x9b489f7fffa89ea450e3121603e79d9093a9396e": {
+      "description": "BTC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2940820821074,
+        "timestamp": 1653145851
+      }
+    },
+    "0xf9c53a834f60cbbe40e27702276fbc0819b3afad": {
+      "description": "USDC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100050931,
+        "timestamp": 1653145849
+      }
+    },
+    "0xcac8362649dae2cc0a91e1d200a93e4cef620be5": {
+      "description": "AAVE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9210955372,
+        "timestamp": 1653145845
+      }
+    },
+    "0xde89d2acf279d1478ff0557318b44a614846f737": {
+      "description": "ADA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 53143816,
+        "timestamp": 1653145859
+      }
+    },
+    "0xdbbf66711c9a0dff777797d82dda7009b6c846dd": {
+      "description": "LINK / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 705272399,
+        "timestamp": 1653145853
+      }
+    },
+    "0xcd16df514a501596a8e24fe1dc9c9be9c9091285": {
+      "description": "BNB / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 31022807052,
+        "timestamp": 1653145855
+      }
+    },
+    "0x62439095489eb5de4572de632248682c09a05ad4": {
+      "description": "DAI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100128318,
+        "timestamp": 1653145857
+      }
+    },
+    "0x02acd64082a7ea28feb39d8dc2e44c1600f89976": {
+      "description": "DOT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 982000000,
+        "timestamp": 1653145855
+      }
+    },
+    "0xeaf35f06410014234bee87980a902c21f78cb426": {
+      "description": "JPY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 781983,
+        "timestamp": 1653094125
+      }
+    },
+    "0x279108b32171d1d2ef2728d2aae19b4e314687cc": {
+      "description": "QUICK / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 7451000000,
+        "timestamp": 1653145671
+      }
+    },
+    "0x93aca6b54475443cc95b58061cf6acff7dd33db7": {
+      "description": "SAND / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 131259901,
+        "timestamp": 1653144698
+      }
+    },
+    "0x772251e809d72bd9ab82a51d5c407b8c22e6decb": {
+      "description": "SNX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 259539138,
+        "timestamp": 1653145857
+      }
+    },
+    "0x1bca643694ba33ca4bcebeba2cb9ad6d1ebca169": {
+      "description": "UMA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 378000000,
+        "timestamp": 1653145861
+      }
+    },
+    "0x166816cacb15f80badc5cd0cc24d64c8d1d1cf61": {
+      "description": "UNI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 525669787,
+        "timestamp": 1653145867
+      }
+    },
+    "0x921c2121af8d68f397cb2d2a3d24ffc180bcdcb7": {
+      "description": "WBTC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 14852524839267326500,
+        "timestamp": 1653122286
+      }
+    },
+    "0x60a47cc34342bc43c308b67d5836d9116a797d6a": {
+      "description": "1INCH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 94157700,
+        "timestamp": 1653145857
+      }
+    },
+    "0x12528b3026cd252e8b4435e22f5615f7f3b8da77": {
+      "description": "AAVE / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 46082879074989450,
+        "timestamp": 1653144138
+      }
+    },
+    "0xb54d6f958c3940db47ccfd65125a2a31d9fcb756": {
+      "description": "ALGO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 43407100,
+        "timestamp": 1653145871
+      }
+    },
+    "0x0a9823c5cd84099fde8566a1adf0f2bb41cc6e7d": {
+      "description": "AUD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 70368000,
+        "timestamp": 1653145867
+      }
+    },
+    "0x6f1fd126ce7caf9598c3e6379e8274d5188e7fa0": {
+      "description": "BAT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 38599149,
+        "timestamp": 1653145867
+      }
+    },
+    "0x88b79bfce730bbb74f23ab8940b37b86859caa2e": {
+      "description": "CAD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 77884652,
+        "timestamp": 1653145873
+      }
+    },
+    "0x8123beacb5bca3afa0c9ff71b28549d58cec8176": {
+      "description": "CHF / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 102603200,
+        "timestamp": 1653078487
+      }
+    },
+    "0xa209f8b8683bae82b54c6990afd7ea6e23a1d6ca": {
+      "description": "CLP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 119580,
+        "timestamp": 1653065910
+      }
+    },
+    "0x19c938dd4c8b3273055e508c6efefb0c8447d863": {
+      "description": "CelsiusX Ethereum->Polygon cxADA PoR",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 24330654100000000000000000,
+        "timestamp": 1653136465
+      }
+    },
+    "0x76383a4bd99ba4df7e1c325cd42ddbbb7643dfdc": {
+      "description": "CelsiusX Ethereum->Polygon cxBTC PoR",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 350040000000000000000,
+        "timestamp": 1653138081
+      }
+    },
+    "0x0c8f8453f7941465739970a221ba1d2d1d49a671": {
+      "description": "CelsiusX Ethereum->Polygon cxDOGE PoR",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 65399975000000000000000000,
+        "timestamp": 1653060819
+      }
+    },
+    "0x789fa5b773c6f60278e69f96d0efb40349e94a9e": {
+      "description": "CelsiusX Ethereum->Polygon: WETH PoR",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 20335000006023619979658,
+        "timestamp": 1653063089
+      }
+    },
+    "0x5777ca61f29cac50250a3b136b52328d05dba8c9": {
+      "description": "DAI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 509570287655343,
+        "timestamp": 1653105516
+      }
+    },
+    "0x8badf35cf94251dc813b5d5c0ac3f9b2de9e5358": {
+      "description": "DOGE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 8442344,
+        "timestamp": 1653145873
+      }
+    },
+    "0x66d4744e5121c78ffc10c3f52e96b578844c75c4": {
+      "description": "DPI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9596039454,
+        "timestamp": 1653118690
+      }
+    },
+    "0x4ccb7a69f09abe1a3dfe4fe3d43171107ed25bfc": {
+      "description": "EOS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 130742903,
+        "timestamp": 1653145879
+      }
+    },
+    "0x310990e8091b5cf083fa55f500f140cfbb959016": {
+      "description": "EUR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105624502,
+        "timestamp": 1653145883
+      }
+    },
+    "0x478e736496e3b93aeab113b42b430bee31200850": {
+      "description": "FXS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 626522414,
+        "timestamp": 1653144444
+      }
+    },
+    "0x3f7f90e0f782e325401f6323ba93e717f519f382": {
+      "description": "GBP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 124885000,
+        "timestamp": 1653145879
+      }
+    },
+    "0xd2aa3fc2585999ef9ca66a1b6be18123b5774be7": {
+      "description": "LINK / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 3558441351811889,
+        "timestamp": 1653144774
+      }
+    },
+    "0x9d5fed875fd982ae3538280e5f34c545bed14749": {
+      "description": "LTC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 7000508132,
+        "timestamp": 1653145877
+      }
+    },
+    "0x880f911aea57967ec22cd95d36e74327daab3b49": {
+      "description": "MANA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 109100000,
+        "timestamp": 1653145887
+      }
+    },
+    "0xc6d82423c6f8b0c406c1c34aee8e988b14d5f685": {
+      "description": "MATIC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 326800000000000,
+        "timestamp": 1653142112
+      }
+    },
+    "0xb070f224d89752f281b8605a54556df0b9447a90": {
+      "description": "MFT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 505507,
+        "timestamp": 1653145801
+      }
+    },
+    "0x003b2727e9e1139e69c0bdd781be2f71d643cc7f": {
+      "description": "MYR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 22701500,
+        "timestamp": 1653062651
+      }
+    },
+    "0x98a0c8953788ac0f1ff10cbe1799e8d9134ce3a0": {
+      "description": "OHM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5167671747,
+        "timestamp": 1653145775
+      }
+    },
+    "0x6498c24083a4667aaa53bde365bbc503eef69828": {
+      "description": "OMG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 249901202,
+        "timestamp": 1653145891
+      }
+    },
+    "0x8a2355ec4678186164dc17dfc2c5d0d083d7fd66": {
+      "description": "PHP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1914500,
+        "timestamp": 1653075623
+      }
+    },
+    "0x836faa493e68fac2dd6b9250ace9666fd48c4f09": {
+      "description": "QUICK / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 37382615658158445,
+        "timestamp": 1653141560
+      }
+    },
+    "0x37b557dd3d3552c4daa4da935cf5bf2f3d04c8bf": {
+      "description": "SOL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5070447162,
+        "timestamp": 1653145887
+      }
+    },
+    "0xf3f28072f7ff2510843504c69acd07c2c84b2d83": {
+      "description": "SUSHI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 139332086,
+        "timestamp": 1653145771
+      }
+    },
+    "0xae26018c6bc53ae5919206879d7105c209fd5747": {
+      "description": "THB / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2903600,
+        "timestamp": 1653140575
+      }
+    },
+    "0xec5dc23f4fa6aac7fcbbcc2849571b04fcacd75f": {
+      "description": "USDC / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 510430000000000,
+        "timestamp": 1653133451
+      }
+    },
+    "0x40c9e6e3ba0324e58c0c88c78c8e733a93ac1b61": {
+      "description": "USDT / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 504856932429124,
+        "timestamp": 1653145571
+      }
+    },
+    "0x3011e9d73e9b01a593da032f41626e6bbe9e408d": {
+      "description": "USDT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99919816,
+        "timestamp": 1653145887
+      }
+    },
+    "0x3ae204993812121bf0c54e8b993e59a6978fbb58": {
+      "description": "VND / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 4315,
+        "timestamp": 1653106630
+      }
+    },
+    "0x1083811a3cee096bead2a6db67d1f145f4919fdb": {
+      "description": "XLM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 12915385,
+        "timestamp": 1653145893
+      }
+    },
+    "0xa3f4500add9484c42461a9d7d52f2c034169f49a": {
+      "description": "XRP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 41328279,
+        "timestamp": 1653145897
+      }
+    },
+    "0x962355fc06e85a341e9f20c395f2fe70f25e793e": {
+      "description": "ZEC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 10382694636,
+        "timestamp": 1653145897
+      }
+    },
+    "0x63a39d35751e8d3e80734bcdc755b2145718385d": {
+      "description": "AGEUR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105612046,
+        "timestamp": 1653145829
+      }
+    },
+    "0xc4af1c7744131bfe4cf86ca2b1688d7f1f428eaf": {
+      "description": "ALCX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3218449904,
+        "timestamp": 1653145791
+      }
+    },
+    "0xb24acd0c92014920aa233f78331e47aed3b5f204": {
+      "description": "APE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 794684506,
+        "timestamp": 1653145563
+      }
+    },
+    "0xe3a36141cb950eb56dec7383f2d9234bbdc69b6e": {
+      "description": "AVAX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2987098467,
+        "timestamp": 1653145243
+      }
+    },
+    "0xd0ccf213410578df4ec5eb0157234120b30d2f81": {
+      "description": "BAL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 769069283,
+        "timestamp": 1653145671
+      }
+    },
+    "0xd4957f86cc075d769a77832d5ec3a375e247c45c": {
+      "description": "BCH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 19459000000,
+        "timestamp": 1653145903
+      }
+    },
+    "0x97a8130ac8d1125ae6cd53a05d27779a4704f786": {
+      "description": "BNT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 137414464,
+        "timestamp": 1653145905
+      }
+    },
+    "0xdc98232d16f34e3d63f4c52050f8dfa44f7644e9": {
+      "description": "BOND / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 355625426,
+        "timestamp": 1653145565
+      }
+    },
+    "0xadf3a2c5c53e2e32c6a504fe9e449f7566ae0c71": {
+      "description": "BSV / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 4878477994,
+        "timestamp": 1653145905
+      }
+    },
+    "0x7c91d32a126dff213b368d8527e8be13d641f81f": {
+      "description": "BTG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1869403666,
+        "timestamp": 1653145903
+      }
+    },
+    "0xb2e3eed25825e8c3946e403b8e8d943976e484e4": {
+      "description": "BUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100059178,
+        "timestamp": 1653145911
+      }
+    },
+    "0xe4d065e16f542290fdef8baca5655d14e1bc3d08": {
+      "description": "CEL / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 77293900,
+        "timestamp": 1653145909
+      }
+    },
+    "0xf07eac7a48eb772613479d6a8fc42675f1befb47": {
+      "description": "CNY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 14940950,
+        "timestamp": 1653116752
+      }
+    },
+    "0x3e2860bfcbc891e8afd8c191a2a05c58ee7a818e": {
+      "description": "COMP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6788652185,
+        "timestamp": 1653145907
+      }
+    },
+    "0xe74eb858c9dc7d013ce1392468ea1161e8c75fbd": {
+      "description": "COP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 25100,
+        "timestamp": 1653095261
+      }
+    },
+    "0xc1670343d479ddea6e90a108741b8acc23abe847": {
+      "description": "CRV / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 593710000000000,
+        "timestamp": 1653144352
+      }
+    },
+    "0x718ef00943cfd6cdf10d22452fe8cfcd0ad27682": {
+      "description": "DASH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5791650273,
+        "timestamp": 1653145913
+      }
+    },
+    "0x0faabfee3ae81f45bc2c452f9ffaf95218178ac0": {
+      "description": "EFI / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 21170294,
+        "timestamp": 1653145905
+      }
+    },
+    "0x886cca828224f2d196ad386f35a76573604702c2": {
+      "description": "ETC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2041041301,
+        "timestamp": 1653145911
+      }
+    },
+    "0xe6c8e7546c0d8b89226379c8c9b7738ce8ffa78d": {
+      "description": "EURT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105600000,
+        "timestamp": 1653143066
+      }
+    },
+    "0xf1ae47478cf731788be7d1444dfe351146bde3ed": {
+      "description": "FARM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5161856016,
+        "timestamp": 1653132881
+      }
+    },
+    "0x90f49083a5344979d8983ca95fbd107b3ff5cf3e": {
+      "description": "FTM / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 37283664,
+        "timestamp": 1653145329
+      }
+    },
+    "0xec35e6f084ce365a819e99bcd1f89319e519fdf3": {
+      "description": "GHST / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 792094111812217,
+        "timestamp": 1653120286
+      }
+    },
+    "0xfd001350eac4bed88dde16d0770d12e8e4d9508b": {
+      "description": "GNO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 21088603217,
+        "timestamp": 1653145917
+      }
+    },
+    "0x6548b8b550ec798d5ba929f98f4c4cfbd85453b8": {
+      "description": "HKD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 12742815,
+        "timestamp": 1653145923
+      }
+    },
+    "0x0dec46bfda8ce29bfa6be4343aa44d9befc71e90": {
+      "description": "ICP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 806831703,
+        "timestamp": 1653145921
+      }
+    },
+    "0xb8cc3cf74aadc5beeb9b7c669433f57347d94d1d": {
+      "description": "KNC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 254323774,
+        "timestamp": 1653145925
+      }
+    },
+    "0xfd54f97a6c408561b5df798c04ae08b27ca0d7f7": {
+      "description": "KRW / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 78460,
+        "timestamp": 1653066314
+      }
+    },
+    "0xa6666759e1a8f61e70825851108fbf864a1b9351": {
+      "description": "LEO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 491794666,
+        "timestamp": 1653145925
+      }
+    },
+    "0xc3f16f2a1c4469f931148e88622a45bf60804b68": {
+      "description": "LPT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1513746249,
+        "timestamp": 1653145927
+      }
+    },
+    "0x10f21e25f1edb99a7ae67c8efb8889e5571d6600": {
+      "description": "MIOTA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 32471981,
+        "timestamp": 1653145927
+      }
+    },
+    "0xa5043abeb607a370a16cdbd885fb7da6485a4e2c": {
+      "description": "MKR / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 713000000000000000,
+        "timestamp": 1653144172
+      }
+    },
+    "0xe41b5d02e64b165e77f12b72bf80b56d076000cf": {
+      "description": "MKR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 141515354437,
+        "timestamp": 1653145919
+      }
+    },
+    "0x97d234f8a213773fa6279bf2f29b3d05cce86c5e": {
+      "description": "NEO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1043969727,
+        "timestamp": 1653145929
+      }
+    },
+    "0x3ad4d99d3da7d14de91aae7ea6b21ea8b03eae62": {
+      "description": "NU / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 17120700,
+        "timestamp": 1653145929
+      }
+    },
+    "0x21b701aadf13300e944451073ca6ddb1af1e29a0": {
+      "description": "OCEAN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 22427609,
+        "timestamp": 1653145929
+      }
+    },
+    "0x320ee11c1b42933b53259c7ee9e4f31582772caa": {
+      "description": "PAX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100139939,
+        "timestamp": 1653145933
+      }
+    },
+    "0x1820f1ec37e930203449a640624fc68095f573f5": {
+      "description": "PAXG / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 185346000000,
+        "timestamp": 1653145935
+      }
+    },
+    "0x08f8d217e6f07ae423a2ad2ffb226ffcb577708d": {
+      "description": "PLN / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 22780860,
+        "timestamp": 1653070197
+      }
+    },
+    "0x1cdf082f4b3b5eca8292b741665eb45bdb248ca3": {
+      "description": "POLY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 24005391,
+        "timestamp": 1653145933
+      }
+    },
+    "0x632b157ea29a00008b4f195fc1b41fd0b989b3a2": {
+      "description": "QNT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6870642234,
+        "timestamp": 1653145931
+      }
+    },
+    "0xc8125b9941fade2e9c86f555464d9d96ccb9e3e3": {
+      "description": "REP / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 704140196,
+        "timestamp": 1653145493
+      }
+    },
+    "0xf76219fb57bae9f7f5d4d32ede1c4ace18c795b0": {
+      "description": "RGT / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 732403157,
+        "timestamp": 1653145931
+      }
+    },
+    "0x04768e2cc25301d2f6683e73039e73035bbf7186": {
+      "description": "RLY / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6682670,
+        "timestamp": 1653145937
+      }
+    },
+    "0x45ede0ea5cbbe380c663c7c3015cc7c986669fec": {
+      "description": "SGD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 72440400,
+        "timestamp": 1653075379
+      }
+    },
+    "0x322fd65e428bbe23782c52b9dc7fb9d15d605011": {
+      "description": "STETH / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 192944000000,
+        "timestamp": 1653145939
+      }
+    },
+    "0x953d8c16fd4f22951c2f497669c6869b86b4e60e": {
+      "description": "THETA / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 124743801,
+        "timestamp": 1653145937
+      }
+    },
+    "0x82be1af823a75252f9238fd11319a15ef92711ba": {
+      "description": "TRIBE / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 25307702,
+        "timestamp": 1653145939
+      }
+    },
+    "0xa0eefe4da82d88991c26a2ba7868c5a1c485a72e": {
+      "description": "TRX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 7543388,
+        "timestamp": 1653145937
+      }
+    },
+    "0x2343c7e237ecb888b5400277863178388dcc84f5": {
+      "description": "TUSD / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100081454,
+        "timestamp": 1653145937
+      }
+    },
+    "0x4f1ea89a64b56287ec74a0b1f59afec5ea7acdf3": {
+      "description": "TZS / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 43033,
+        "timestamp": 1653134151
+      }
+    },
+    "0x811ec390710bf071a585e32a465d06890a420937": {
+      "description": "UNI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 2649220482562201,
+        "timestamp": 1653145365
+      }
+    },
+    "0xbe493071a5ad2fe9c75427a15ac903d433ecc9ab": {
+      "description": "VET / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3080181,
+        "timestamp": 1653145939
+      }
+    },
+    "0x13b25ae82978d7d65302ed0b4ee0ee0a5cb3a70b": {
+      "description": "WBTC / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2932079023116,
+        "timestamp": 1653125560
+      }
+    },
+    "0xb16b1ee56c70cf1fdd1e32d092045d08e5be4693": {
+      "description": "WOO / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 19635143,
+        "timestamp": 1653145563
+      }
+    },
+    "0x704179beb09282eaef98ca8aaa443c1e273ebbc2": {
+      "description": "XAU / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 184659999999,
+        "timestamp": 1653145949
+      }
+    },
+    "0xf7c72effe3975c25252539685574a5f5bde19423": {
+      "description": "YFI / ETH",
+      "checkEnable": "true",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 4653279475844195000,
+        "timestamp": 1653143302
+      }
+    },
+    "0x88245775029dc400a28371a77cdbb9f15dcbb67c": {
+      "description": "ZAR / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6328971,
+        "timestamp": 1653080667
+      }
+    },
+    "0x32b19916d42d5f1070941fea35f9686c253f0545": {
+      "description": "ZRX / USD",
+      "checkEnable": "true",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 42951116,
+        "timestamp": 1653145939
+      }
+    }
+  },
+  "arbitrum": {
+    "0x942d00008d658dbb40745bbec89a93c253f9b882": {
+      "description": "BTC / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2947178000000,
+        "timestamp": 1653148407
+      }
+    },
+    "0x3607e46698d218b3a5cae44bf381475c0a5e2ca7": {
+      "description": "ETH / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 197950000000,
+        "timestamp": 1653148448
+      }
+    },
+    "0x9b8ddcf800a7bfcdebad6d65514de59160a2c9cc": {
+      "description": "LINK / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 703000000,
+        "timestamp": 1653148332
+      }
+    },
+    "0x2946220288dbbf77df0030fcecc2a8348cbbe32c": {
+      "description": "USDC / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100018629,
+        "timestamp": 1653089365
+      }
+    },
+    "0xcb35fe6e53e71b30301ec4a3948da4ad3c65ace4": {
+      "description": "USDT / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99889226,
+        "timestamp": 1653141257
+      }
+    },
+    "0x660e7af290f540205a84dccc1f40d0269fc936f5": {
+      "description": "YFI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 919349045127,
+        "timestamp": 1653145529
+      }
+    },
+    "0x3c6abda21358c15601a3175d8dd66d0c572cc904": {
+      "description": "AAVE / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9189082981,
+        "timestamp": 1653148407
+      }
+    },
+    "0x4258e5d50d737cbbea347f0115ad166e234902d7": {
+      "description": "AUD / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 70461000,
+        "timestamp": 1653078575
+      }
+    },
+    "0x3c8f2d5af2e0f5ef7c23a08df6ad168ece071d4b": {
+      "description": "BTC / ETH",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 14886191000000000000,
+        "timestamp": 1653077020
+      }
+    },
+    "0x1b9749e06817433a34d7efaaa0a7f6a94a41e432": {
+      "description": "CNY / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 14940900,
+        "timestamp": 1653116656
+      }
+    },
+    "0xfc06bb03a9e1d8033f87ea6a682cbd65477a43b9": {
+      "description": "DAI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100118864,
+        "timestamp": 1653146655
+      }
+    },
+    "0x7aaee6ad40a947a162deab5afd0a1e12be6ff871": {
+      "description": "EUR / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105624500,
+        "timestamp": 1653145221
+      }
+    },
+    "0xf8c6de435cf8d06897a4a66b21df623d06d2a761": {
+      "description": "FXS / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 627735595,
+        "timestamp": 1653147883
+      }
+    },
+    "0x0d02b6eba98bda364953d9b1def8eedc19ffd516": {
+      "description": "SUSHI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 140500000,
+        "timestamp": 1653147914
+      }
+    },
+    "0xefc5061b7a8aef31f789f1ba5b3b8256674f2b71": {
+      "description": "UNI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 526769815,
+        "timestamp": 1653148407
+      }
+    },
+    "0x076577765a3e66db410ecc1372d0b0db503a42c5": {
+      "description": "APE / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 819454062,
+        "timestamp": 1653148455
+      }
+    },
+    "0xa303a72d334e589122454e8e849e147bad309e73": {
+      "description": "AXS / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2077950587,
+        "timestamp": 1653146044
+      }
+    },
+    "0x9c65bc9c18f754129ba00c5298b539e69a32102d": {
+      "description": "BNB / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 31084000000,
+        "timestamp": 1653148407
+      }
+    },
+    "0x52716c109696c0229e18fdeadff6f54b3b73784f": {
+      "description": "CAD / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 77884652,
+        "timestamp": 1653144709
+      }
+    },
+    "0xf56e6cb49304c2ad4a7c416665b55a1424014b1f": {
+      "description": "CHF / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 102570204,
+        "timestamp": 1653140707
+      }
+    },
+    "0x79daa21a44d1415306ec17c361e0090bdd4cfcbe": {
+      "description": "CRV / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 117516382,
+        "timestamp": 1653148455
+      }
+    },
+    "0x3d62e33e97de1f0ce913db62d5972722c2a7e4f6": {
+      "description": "CVX / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 964000000,
+        "timestamp": 1653145114
+      }
+    },
+    "0xb61d6e5ecb4188248702f65d59728f607f9e3d2f": {
+      "description": "DODO / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 14006377,
+        "timestamp": 1653148407
+      }
+    },
+    "0x2f45a77c5024eb546e9e7f445f266c0d3e71e616": {
+      "description": "DOT / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 983286348,
+        "timestamp": 1653148407
+      }
+    },
+    "0xbd3bb32a3fd843b066ab29ae42c63d44028e20d8": {
+      "description": "FEI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100288668,
+        "timestamp": 1653135844
+      }
+    },
+    "0x5d041081725468aa43e72ff0445fde2ad1ade775": {
+      "description": "FRAX / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100100000,
+        "timestamp": 1653118015
+      }
+    },
+    "0x78f28d363533695458696b42577d2e1728cea3d1": {
+      "description": "GBP / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 124885000,
+        "timestamp": 1653145114
+      }
+    },
+    "0xadbf1c8a244d537c343d771e2fa897f3654a1ae4": {
+      "description": "JPY / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 783080,
+        "timestamp": 1653064935
+      }
+    },
+    "0x244ea8646cc2342497dfd5d8f841f79e66e598cf": {
+      "description": "KRW / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 78410,
+        "timestamp": 1653066298
+      }
+    },
+    "0x0ae17556f9698fc47c365a746ab9cddcb17f3809": {
+      "description": "MIM / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 99910000,
+        "timestamp": 1653089421
+      }
+    },
+    "0x55efaffc2764389a08ffdfcd36aee2c30610d42c": {
+      "description": "MKR / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 141227000000,
+        "timestamp": 1653145114
+      }
+    },
+    "0x09410414ca067b8763ce62dbeca8160be9cfd548": {
+      "description": "OHMv2 / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1714000000,
+        "timestamp": 1653146675
+      }
+    },
+    "0x2e4c363449e2ec7e93cd9ed4f3843c2ca4497108": {
+      "description": "PAXG / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 185347638806,
+        "timestamp": 1653076724
+      }
+    },
+    "0x5e4c65194f6f33a8bf7e9b95f1d0ca9d611f6d62": {
+      "description": "PHP / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 1914200,
+        "timestamp": 1653097074
+      }
+    },
+    "0xd0da1fe3a35359564cb7561f6a6aa69a1ecec8d5": {
+      "description": "SEK / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 10058215,
+        "timestamp": 1653142229
+      }
+    },
+    "0x7dd7029668c78af259a27a7696d468a152f06e53": {
+      "description": "SGD / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 72352355,
+        "timestamp": 1653070156
+      }
+    },
+    "0x8c4308f7cbd7fb829645853cd188500d7da8610a": {
+      "description": "SOL / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5056972419,
+        "timestamp": 1653148196
+      }
+    },
+    "0x4b3f43e086790a71270750192472fb61df7e8566": {
+      "description": "SPELL / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 144452,
+        "timestamp": 1653146745
+      }
+    },
+    "0xe5b5be82015444c04b281cf4afa6a99130ed83a2": {
+      "description": "STETH / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 192541660839,
+        "timestamp": 1653142179
+      }
+    },
+    "0xf867a76dc4445a2e39f3217fa15d6a9edc0eab61": {
+      "description": "TOKE / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 455741094,
+        "timestamp": 1653145893
+      }
+    },
+    "0x459d99c45c981a5d26f08e6415eef82485eb2203": {
+      "description": "TRIBE / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 25225600,
+        "timestamp": 1653140966
+      }
+    },
+    "0x0a4d55347817738166e2ef8302e12f99cfbddedd": {
+      "description": "XAG / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2175950000,
+        "timestamp": 1653145114
+      }
+    },
+    "0xd35b0e1fd468bd264570c64f28ea48f778bc0dfc": {
+      "description": "XAU / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 184659999999,
+        "timestamp": 1653145221
+      }
+    },
+    "0xb39bfad6295724e01e079ee3aa78a378eff6deb0": {
+      "description": "wstETH-stETH Exchange Rate",
+      "decimals": 18,
+      "latestRounddata": {
+        "answer": 1071998683555430649,
+        "timestamp": 1653072928
+      }
+    }
+  },
+  "gnosis": {
+    "0x059e7bd8157e0d302df3626e162b6c835340b311": {
+      "description": "ETH / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 197662960000,
+        "timestamp": 1653147560
+      }
+    },
+    "0xad479d707a8f1faa346fe1380f76cf993ae54330": {
+      "description": "BTC / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2950370300000,
+        "timestamp": 1653148430
+      }
+    },
+    "0xb65566283cace6b281308308da0f0783a613c416": {
+      "description": "DAI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100100000,
+        "timestamp": 1653119995
+      }
+    },
+    "0x642736bb512ac22d37171bf57eda17e48e977be8": {
+      "description": "YFI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 918965522563,
+        "timestamp": 1653145585
+      }
+    },
+    "0xf50a71387d9d01ed3873e32f1044497327af1044": {
+      "description": "1INCH / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 94743565,
+        "timestamp": 1653148430
+      }
+    },
+    "0xd2ccca5bb84cb2f6b72b98ee82c61f67c82dd40b": {
+      "description": "AAVE / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9200327672,
+        "timestamp": 1653148495
+      }
+    },
+    "0xf5fd312d0435c24f5c9bb8411bfc3d79c23eb0bd": {
+      "description": "ALPHA / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 15731150,
+        "timestamp": 1653148595
+      }
+    },
+    "0x3f2ba1e94112120d11f1a525913134fbe510bf37": {
+      "description": "BAL / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 774555528,
+        "timestamp": 1653148505
+      }
+    },
+    "0x7cfea3c34fbef2e9a53c188a75494aedc3a743ff": {
+      "description": "COMP / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 6793934052,
+        "timestamp": 1653147745
+      }
+    },
+    "0x991bc14cf115d9b6ea518c412c9f4ea234d70c0a": {
+      "description": "CREAM / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2180120531,
+        "timestamp": 1653147430
+      }
+    },
+    "0x88c76cccaa469614eaad7ced362050062dc2cceb": {
+      "description": "CRV / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 117742778,
+        "timestamp": 1653148565
+      }
+    },
+    "0x5128bed0c719537b179af0af01386caf9b22baf1": {
+      "description": "DOT / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 984328786,
+        "timestamp": 1653148475
+      }
+    },
+    "0xcff7b6aaf94513566a5821ff77bcc075f5d2273d": {
+      "description": "GRT / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 15809886,
+        "timestamp": 1653148495
+      }
+    },
+    "0xa5f05b6c586f21b7e6200b6a6a4ade55ecab0103": {
+      "description": "JPY / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 781700,
+        "timestamp": 1653078380
+      }
+    },
+    "0x813a79efdfd6a4352b7c583d8d38b2b5d1151d7e": {
+      "description": "LINK / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 704975975,
+        "timestamp": 1653148620
+      }
+    },
+    "0x88403402b966dee25724d24adf56d398d1d7334e": {
+      "description": "MKR / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 141248383326,
+        "timestamp": 1653144530
+      }
+    },
+    "0xafb768ef3aa6a5756f9f2d11cbe04c4ef90949bf": {
+      "description": "PERP / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 120000000,
+        "timestamp": 1653148570
+      }
+    },
+    "0xef2cd9d9b9e5d8101e36dff9d602d96e819a2ee8": {
+      "description": "REN / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 14614245,
+        "timestamp": 1653148570
+      }
+    },
+    "0xb4f30d1a9bc25762b43c19d3ea6d65f8ca1667f8": {
+      "description": "RUNE / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 295000000,
+        "timestamp": 1653148520
+      }
+    },
+    "0x19e5234e9aad5fb08f58c3569e8d0858664f0cf3": {
+      "description": "SNX / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 261000000,
+        "timestamp": 1653148260
+      }
+    },
+    "0xd73dcdf9795f04bb91cfc86d86db5286b2606a26": {
+      "description": "SUSHI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 141300000,
+        "timestamp": 1653148640
+      }
+    },
+    "0x3448beb14411c2ecf5e86632dc9ad65849ae2a2e": {
+      "description": "UMA / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 365085694,
+        "timestamp": 1653148435
+      }
+    },
+    "0x29b914b44169b04262ae11173149d7f1131791bc": {
+      "description": "UNI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 526000000,
+        "timestamp": 1653147910
+      }
+    },
+    "0x30ba871ee7a08dbd255cdd8e7e035dad72014e27": {
+      "description": "USDC / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 100034071,
+        "timestamp": 1653087190
+      }
+    },
+    "0x53ba6d580a9eab65899bbc1157c2062a83fa8d9e": {
+      "description": "XAU / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 184640000000,
+        "timestamp": 1653086065
+      }
+    },
+    "0xb840c9dbc0964bcd89d6410f34091b2cb6733adb": {
+      "description": "AVAX / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 2992000000,
+        "timestamp": 1653148665
+      }
+    },
+    "0x9af55762115066d3e99ad4d237586344c4abeadd": {
+      "description": "BNB / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 31100423539,
+        "timestamp": 1653148560
+      }
+    },
+    "0x57e62eb3e84a2d12cc40acba84d10b79da9e7c2e": {
+      "description": "DPI / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 9659809962,
+        "timestamp": 1653148235
+      }
+    },
+    "0x759be90a34e426042ed7d17916b78a5cd2567dd1": {
+      "description": "EUR / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 105367000,
+        "timestamp": 1653070990
+      }
+    },
+    "0x1af770b72da45e4278ca190370902adea889eba3": {
+      "description": "FOX / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 15728066,
+        "timestamp": 1653147430
+      }
+    },
+    "0x932ab70a49f0c678c9368040068e98f1a5a6a27a": {
+      "description": "FTT / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 3014627130,
+        "timestamp": 1653148390
+      }
+    },
+    "0x016a45f646bbd35b61fe7a496a75d9ea69bd243e": {
+      "description": "GNO / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 21125800177,
+        "timestamp": 1653148340
+      }
+    },
+    "0x295442cf6ba90e91b8a01a7c2de9d7db987439c8": {
+      "description": "SOL / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5044186892,
+        "timestamp": 1653146280
+      }
+    },
+    "0xa08ec11e8e1d9adefb713bcbafc186225ab572a3": {
+      "description": "STAKE / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 670226199,
+        "timestamp": 1653100310
+      }
+    },
+    "0x736c15db4e4f694c7c899ac91c05bd5a795cfdd0": {
+      "description": "ZIL / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 5201750,
+        "timestamp": 1653148665
+      }
+    },
+    "0xcc5a624a98600564992753daff5cdfe7a2e58f67": {
+      "description": "STETH / USD",
+      "decimals": 8,
+      "latestRounddata": {
+        "answer": 192694000000,
+        "timestamp": 1653140765
+      }
+    }
+  }
+}

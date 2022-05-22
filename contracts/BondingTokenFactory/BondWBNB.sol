@@ -264,6 +264,8 @@ interface ITreasury {
 interface IPriceData {
     function latestAnswer() external view returns (int256 answer);
 
+    function latestTimestamp() external view returns (uint256 answer);
+
     function decimals() external view returns (uint8);
 }
 
@@ -397,6 +399,12 @@ contract BondBNBImplement is Singleton, Pausable {
         DAO = _DAO;
     }
 
+    modifier priceFeedValid(){
+        require((block.timestamp).sub(principlePriceFeed.latestTimestamp()) < 86400
+            && (block.timestamp).sub(paymentTokenPriceFeed.latestTimestamp()) < 86400, "Inactive price feed");
+        _;
+    }
+
     /**
      *  @notice initializes bond parameters
      *  @param _controlVariable uint
@@ -448,7 +456,7 @@ contract BondBNBImplement is Singleton, Pausable {
      *  @param _depositor address
      *  @return uint
      */
-    function deposit(address _depositor) external payable whenNotPaused returns (uint){
+    function deposit(address _depositor) external payable whenNotPaused priceFeedValid returns (uint){
         uint256 _amount = msg.value;
         IWBNB(principle).deposit{value : _amount}();
         require(_depositor != address(0), "Invalid address");
