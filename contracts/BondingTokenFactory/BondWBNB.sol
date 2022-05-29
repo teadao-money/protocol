@@ -3,17 +3,8 @@ pragma solidity 0.7.5;
 
 pragma experimental ABIEncoderV2;
 
-interface IOwnable {
-    function owner() external view returns (address);
 
-    function renounceOwner() external;
-
-    function pushOwner(address newOwner_) external;
-
-    function pullOwner() external;
-}
-
-contract Ownable is IOwnable {
+contract Ownable {
 
     address internal _owner;
     address internal _newOwner;
@@ -26,7 +17,7 @@ contract Ownable is IOwnable {
         emit OwnershipPushed(address(0), __owner);
     }
 
-    function owner() public override view returns (address) {
+    function owner() public view returns (address) {
         return _owner;
     }
 
@@ -35,18 +26,18 @@ contract Ownable is IOwnable {
         _;
     }
 
-    function renounceOwner() public virtual override onlyOwner() {
+    function renounceOwner() public onlyOwner() {
         emit OwnershipPushed(_owner, address(0));
         _owner = address(0);
     }
 
-    function pushOwner(address newOwner_) public virtual override onlyOwner() {
+    function pushOwner(address newOwner_) public onlyOwner() {
         require(newOwner_ != address(0), "Ownable: new owner is the zero address");
         emit OwnershipPushed(_owner, newOwner_);
         _newOwner = newOwner_;
     }
 
-    function pullOwner() public virtual override {
+    function pullOwner() public {
         require(msg.sender == _newOwner, "Ownable: must be new owner to pull");
         emit OwnershipPulled(_owner, _newOwner);
         _owner = _newOwner;
@@ -105,14 +96,6 @@ library Address {
         return size > 0;
     }
 
-    function sendValue(address payable recipient, uint256 amount) internal {
-        require(address(this).balance >= amount, "Address: insufficient balance");
-
-        // solhint-disable-next-line avoid-low-level-calls, avoid-call-value
-        (bool success,) = recipient.call{value : amount}("");
-        require(success, "Address: unable to send value, recipient may have reverted");
-    }
-
     function functionCall(address target, bytes memory data) internal returns (bytes memory) {
         return functionCall(target, data, "Address: low-level call failed");
     }
@@ -121,18 +104,6 @@ library Address {
         return _functionCallWithValue(target, data, 0, errorMessage);
     }
 
-    function functionCallWithValue(address target, bytes memory data, uint256 value) internal returns (bytes memory) {
-        return functionCallWithValue(target, data, value, "Address: low-level call with value failed");
-    }
-
-    function functionCallWithValue(address target, bytes memory data, uint256 value, string memory errorMessage) internal returns (bytes memory) {
-        require(address(this).balance >= value, "Address: insufficient balance for call");
-        require(isContract(target), "Address: call to non-contract");
-
-        // solhint-disable-next-line avoid-low-level-calls
-        (bool success, bytes memory returndata) = target.call{value : value}(data);
-        return _verifyCallResult(success, returndata, errorMessage);
-    }
 
     function _functionCallWithValue(address target, bytes memory data, uint256 weiValue, string memory errorMessage) private returns (bytes memory) {
         require(isContract(target), "Address: call to non-contract");
@@ -156,63 +127,6 @@ library Address {
             }
         }
     }
-
-    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {
-        return functionStaticCall(target, data, "Address: low-level static call failed");
-    }
-
-    function functionStaticCall(address target, bytes memory data, string memory errorMessage) internal view returns (bytes memory) {
-        require(isContract(target), "Address: static call to non-contract");
-
-        // solhint-disable-next-line avoid-low-level-calls
-        (bool success, bytes memory returndata) = target.staticcall(data);
-        return _verifyCallResult(success, returndata, errorMessage);
-    }
-
-    function functionDelegateCall(address target, bytes memory data) internal returns (bytes memory) {
-        return functionDelegateCall(target, data, "Address: low-level delegate call failed");
-    }
-
-    function functionDelegateCall(address target, bytes memory data, string memory errorMessage) internal returns (bytes memory) {
-        require(isContract(target), "Address: delegate call to non-contract");
-
-        // solhint-disable-next-line avoid-low-level-calls
-        (bool success, bytes memory returndata) = target.delegatecall(data);
-        return _verifyCallResult(success, returndata, errorMessage);
-    }
-
-    function _verifyCallResult(bool success, bytes memory returndata, string memory errorMessage) private pure returns (bytes memory) {
-        if (success) {
-            return returndata;
-        } else {
-            if (returndata.length > 0) {
-
-                assembly {
-                    let returndata_size := mload(returndata)
-                    revert(add(32, returndata), returndata_size)
-                }
-            } else {
-                revert(errorMessage);
-            }
-        }
-    }
-
-    function addressToString(address _address) internal pure returns (string memory) {
-        bytes32 _bytes = bytes32(uint256(_address));
-        bytes memory HEX = "0123456789abcdef";
-        bytes memory _addr = new bytes(42);
-
-        _addr[0] = '0';
-        _addr[1] = 'x';
-
-        for (uint256 i = 0; i < 20; i++) {
-            _addr[2 + i * 2] = HEX[uint8(_bytes[i + 12] >> 4)];
-            _addr[3 + i * 2] = HEX[uint8(_bytes[i + 12] & 0x0f)];
-        }
-
-        return string(_addr);
-
-    }
 }
 
 interface IBEP20 {
@@ -220,19 +134,9 @@ interface IBEP20 {
 
     function totalSupply() external view returns (uint256);
 
-    function balanceOf(address account) external view returns (uint256);
-
     function transfer(address recipient, uint256 amount) external returns (bool);
 
-    function allowance(address owner, address spender) external view returns (uint256);
-
     function approve(address spender, uint256 amount) external returns (bool);
-
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
 library SafeBEP20 {
@@ -378,16 +282,20 @@ contract BondBNBImplement is Singleton, Pausable {
         uint _maxPayout,
         uint _fee
     ) external {
-        require(owner() == address(0));
+        // principle cannot equal address(0) after initialize
+        require(principle == address(0));
         initializeOwnable(__owner);
         require(_paymentToken != address(0));
         paymentToken = _paymentToken;
         require(_principle != address(0));
         principle = _principle;
+        require(_principlePriceFeed != address(0));
         principlePriceFeed = IPriceData(_principlePriceFeed);
+        require(_paymentTokenPriceFeed != address(0));
         paymentTokenPriceFeed = IPriceData(_paymentTokenPriceFeed);
         require(_treasury != address(0));
         treasury = _treasury;
+        require(_dao != address(0));
         DAO = _dao;
         require(_staking != address(0));
         staking = _staking;
@@ -443,7 +351,7 @@ contract BondBNBImplement is Singleton, Pausable {
             require(_input <= 10000, "DAO fee cannot exceed payout");
             terms.fee = _input;
         } else if (_parameter == PARAMETER.DISCOUNT) {// 3
-            // input: 1k=> discount = (10k-1k)/10K = 90%
+            // output need input = 1k => discount output= (10k+1k)/10K = 110%
             terms.controlVariable = _input;
         }
     }
@@ -461,8 +369,8 @@ contract BondBNBImplement is Singleton, Pausable {
         IWBNB(principle).deposit{value : _amount}();
         require(_depositor != address(0), "Invalid address");
         //Calculate lp token to paymentToken
-        uint value = uint256(principlePriceFeed.latestAnswer()).mul(_amount).mul(paymentTokenPriceFeed.decimals())
-        .div(uint256(paymentTokenPriceFeed.latestAnswer())).div(principlePriceFeed.decimals());
+        uint value = uint256(principlePriceFeed.latestAnswer()).mul(10 ** paymentTokenPriceFeed.decimals()).div(10 ** principlePriceFeed.decimals())
+        .mul(_amount).div(uint256(paymentTokenPriceFeed.latestAnswer()));
         // convert decimal of token
         value = value.mul(10 ** IBEP20(paymentToken).decimals()).div(10 ** IBEP20(principle).decimals());
         //Apply discount
@@ -487,11 +395,7 @@ contract BondBNBImplement is Singleton, Pausable {
         }
 
         // depositor info is stored
-        bondInfo[_depositor] = Bond({
-        payout : bondInfo[_depositor].payout.add(payout),
-        vesting : terms.vestingTerm,
-        lastBlock : block.number
-        });
+        bondInfo[_depositor] = Bond({payout : bondInfo[_depositor].payout.add(payout), vesting : terms.vestingTerm, lastBlock : block.number});
         // indexed events are emitted
         emit BondCreated(_amount, payout, block.number.add(terms.vestingTerm));
         // control variable is adjusted
@@ -521,11 +425,7 @@ contract BondBNBImplement is Singleton, Pausable {
             uint payout = info.payout.mul(percentVested).div(1000000000);
 
             // store updated deposit info
-            bondInfo[_recipient] = Bond({
-            payout : info.payout.sub(payout),
-            vesting : info.vesting.sub(block.number.sub(info.lastBlock)),
-            lastBlock : block.number
-            });
+            bondInfo[_recipient] = Bond({payout : info.payout.sub(payout), vesting : info.vesting.sub(block.number.sub(info.lastBlock)), lastBlock : block.number});
 
             emit BondRedeemed(_recipient, payout, bondInfo[_recipient].payout);
             return stakeOrSend(_recipient, _stake, payout);
