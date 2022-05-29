@@ -1,18 +1,12 @@
 // SPDX-License-Identifier: LGPL-3.0-only
 pragma solidity >=0.7.0 <0.9.0;
 
-/// @title IProxy - Helper interface to access masterCopy of the Proxy on-chain
-/// @author Richard Meissner - <richard@gnosis.io>
+
 interface IProxy {
     function masterCopy() external view returns (address);
 }
 
-/// @title GnosisSafeProxy - Generic proxy contract allows to execute all transactions applying the code of a master contract.
-/// @author Stefan George - <stefan@gnosis.io>
-/// @author Richard Meissner - <richard@gnosis.io>
 contract Proxy {
-    // singleton always needs to be first declared variable, to ensure that it is at the same location in the contracts to which calls are delegated.
-    // To reduce deployment costs this variable is internal and needs to be retrieved via `getStorageAt`
     address internal singleton;
 
     /// @dev Constructor function sets address of singleton contract.
@@ -57,124 +51,16 @@ interface ISToken {
 }
 
 interface IBonding {
-    function initialize(
-        address _paymentToken,
-        address _principle,
-        address _principlePriceFeed,
-        address _paymentTokenPriceFeed,
-        address _treasury,
-        address _dao,
-        address _staking,
-        address __owner,
-        uint _controlVariable,
-        uint _vestingTerm,
-        uint _maxPayout,
-        uint _fee
-    ) external;
+    function initialize(address _paymentToken, address _principle, address _principlePriceFeed, address _paymentTokenPriceFeed, address _treasury, address _dao, address _staking, address __owner, uint _controlVariable, uint _vestingTerm, uint _maxPayout, uint _fee) external;
 }
 
 interface IBEP20 {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the token decimals.
-     */
     function decimals() external view returns (uint8);
 
-    /**
-     * @dev Returns the token symbol.
-     */
-    function symbol() external view returns (string memory);
-
-    /**
-    * @dev Returns the token name.
-    */
     function name() external view returns (string memory);
-
-    /**
-     * @dev Returns the bep token owner.
-     */
-    function getOwner() external view returns (address);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address _owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-interface IOwnable {
-    function owner() external view returns (address);
-
-    function renounceOwner() external;
-
-    function pushOwner(address newOwner_) external;
-
-    function pullOwner() external;
-}
-
-contract Ownable is IOwnable {
+contract Ownable {
 
     address internal _owner;
     address internal _newOwner;
@@ -187,7 +73,7 @@ contract Ownable is IOwnable {
         emit OwnershipPushed(address(0), __owner);
     }
 
-    function owner() public override view returns (address) {
+    function owner() public view returns (address) {
         return _owner;
     }
 
@@ -196,18 +82,18 @@ contract Ownable is IOwnable {
         _;
     }
 
-    function renounceOwner() public virtual override onlyOwner() {
+    function renounceOwner() public onlyOwner() {
         emit OwnershipPushed(_owner, address(0));
         _owner = address(0);
     }
 
-    function pushOwner(address newOwner_) public virtual override onlyOwner() {
+    function pushOwner(address newOwner_) public onlyOwner() {
         require(newOwner_ != address(0), "Ownable: new owner is the zero address");
         emit OwnershipPushed(_owner, newOwner_);
         _newOwner = newOwner_;
     }
 
-    function pullOwner() public virtual override {
+    function pullOwner() public {
         require(msg.sender == _newOwner, "Ownable: must be new owner to pull");
         emit OwnershipPulled(_owner, _newOwner);
         _owner = _newOwner;
