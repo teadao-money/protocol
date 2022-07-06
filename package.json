@@ -11,5 +11,8 @@
   "dependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-truffle5": "^2.0.5"
+  },
+  "scripts": {
+    "preinstall": "node preinstall.js"
   }
 }
